@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|c:\\users\\mkach\\documents\\github\\forelise\\assets\\scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MemoryScramble.cs",
+              "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\MemoryScramble.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MemoryScramble.cs",
+              "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\MemoryScramble.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MemoryScramble.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T02:35:43.796Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
