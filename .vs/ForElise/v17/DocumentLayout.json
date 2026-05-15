@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|c:\\users\\mkach\\documents\\github\\forelise\\assets\\scripts\\cutscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\cutscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cutscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,8 +30,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CutsceneScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T04:15:50.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T04:15:50.029Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\MemoryScramble.cs",
               "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\MemoryScramble.cs",
               "RelativeToolTip": "Assets\\Scripts\\MemoryScramble.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAkwFkAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAkwHUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-13T02:35:43.796Z",
               "EditorCaption": ""
