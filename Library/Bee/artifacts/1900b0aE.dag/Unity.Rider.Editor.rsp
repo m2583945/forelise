@@ -416,6 +416,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.4.5f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.4.5f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.4.5f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+-analyzer:"Library/PackageCache/dev.yarnspinner.unity@cc0f3c283413/SourceGenerator/YarnSpinner.Unity.SourceCodeGenerator.dll"
 "Library/PackageCache/com.unity.ide.rider@4504839d03f7/Rider/Editor/Discovery.cs"
 "Library/PackageCache/com.unity.ide.rider@4504839d03f7/Rider/Editor/EditorPluginInterop.cs"
 "Library/PackageCache/com.unity.ide.rider@4504839d03f7/Rider/Editor/LogFileOpener.cs"

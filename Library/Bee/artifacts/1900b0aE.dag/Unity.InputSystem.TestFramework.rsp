@@ -408,6 +408,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.4.5f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.4.5f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.4.5f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+-analyzer:"Library/PackageCache/dev.yarnspinner.unity@cc0f3c283413/SourceGenerator/YarnSpinner.Unity.SourceCodeGenerator.dll"
 "Library/PackageCache/com.unity.inputsystem@21a28c3a6c83/Tests/TestFixture/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.inputsystem@21a28c3a6c83/Tests/TestFixture/AssetDatabaseUtils.cs"
 "Library/PackageCache/com.unity.inputsystem@21a28c3a6c83/Tests/TestFixture/InputTestFixture.cs"

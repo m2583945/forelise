@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|c:\\users\\mkach\\documents\\github\\forelise\\assets\\scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|c:\\users\\mkach\\documents\\github\\forelise\\assets\\scripts\\dialoguehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\cutscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cutscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DialogueHandler.cs",
+              "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\DialogueHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueHandler.cs",
+              "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\DialogueHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DialogueHandler.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwC4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T22:37:53.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CutsceneScript.yarn",
+              "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn",
+              "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn",
+              "RelativeToolTip": "Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-24T22:19:42.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CutsceneScript.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\CutsceneScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CutsceneScript.cs",
@@ -30,20 +64,20 @@
               "RelativeToolTip": "Assets\\Scripts\\CutsceneScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T04:15:50.029Z"
+              "WhenOpened": "2026-05-13T04:15:50.029Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MemoryScramble.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\MemoryScramble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MemoryScramble.cs",
               "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\MemoryScramble.cs",
               "RelativeToolTip": "Assets\\Scripts\\MemoryScramble.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAkwGMAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAkwHUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T02:35:43.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T02:35:43.796Z"
             }
           ]
         }

@@ -1,0 +1,23 @@
+﻿title: Start
+---
+Vex: hi i'm vex
+Wow!
+My first ever Yarn script in Unity!
+
+===
+
+title: Cutscene1
+---
+Vex: this is cutscene 1
+<<setRobo robo>>
+EL1: i'm EL1-5E!
+EL1: Vex do you hate me
+-> no
+    EL1: yayyy
+-> yeah and fuck you
+    EL1: should i just kill myself
+<<setVex vex>>
+Vex: uh...anyways
+
+===
+

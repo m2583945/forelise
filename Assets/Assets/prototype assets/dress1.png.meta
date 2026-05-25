@@ -1,0 +1,500 @@
+fileFormatVersion: 2
+guid: e65202c5c7ac8ae428be581c1b9885db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2900772168430955084
+    second: dress1_0
+  - first:
+      213: 5251896496371931528
+    second: dress1_1
+  - first:
+      213: -5782071777078943572
+    second: dress1_2
+  - first:
+      213: 1108046325065492289
+    second: dress1_3
+  - first:
+      213: 6651365154912258725
+    second: dress1_4
+  - first:
+      213: -7183666064889175577
+    second: dress1_5
+  - first:
+      213: 3845498110809744567
+    second: dress1_6
+  - first:
+      213: -3159793429779348661
+    second: dress1_7
+  - first:
+      213: 2825303755407836176
+    second: dress1_8
+  - first:
+      213: -1092786004620016712
+    second: dress1_9
+  - first:
+      213: -2892606008201570706
+    second: dress1_10
+  - first:
+      213: -1966476771043193820
+    second: dress1_11
+  - first:
+      213: 2520893181625502337
+    second: dress1_12
+  - first:
+      213: 1919001997690941674
+    second: dress1_13
+  - first:
+      213: 817922397441436511
+    second: dress1_14
+  - first:
+      213: 14326596050391132
+    second: dress1_15
+  - first:
+      213: 5359351329069527007
+    second: dress1_16
+  - first:
+      213: -5935661563166049064
+    second: dress1_17
+  - first:
+      213: 4611275853039787333
+    second: dress1_18
+  - first:
+      213: 3870310878290773112
+    second: dress1_19
+  - first:
+      213: -6308276669154651620
+    second: dress1_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dress1_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1632
+        width: 1526
+        height: 784
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4aaaa11bec914820800000000000000
+      internalID: 2900772168430955084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1421
+        width: 154
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8891e57a90c72e840800000000000000
+      internalID: 5251896496371931528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_2
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1434
+        width: 103
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0e56d7a54f1cfa0800000000000000
+      internalID: -5782071777078943572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_3
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1414
+        width: 184
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147a4301342906f00800000000000000
+      internalID: 1108046325065492289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_4
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 1414
+        width: 215
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aac4f13e556e4c50800000000000000
+      internalID: 6651365154912258725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_5
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 727
+        width: 366
+        height: 550
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1a04156cd7e4c90800000000000000
+      internalID: -7183666064889175577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_6
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 733
+        width: 382
+        height: 552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4204f4824fd5530800000000000000
+      internalID: 3845498110809744567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_7
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 766
+        width: 371
+        height: 539
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43836eed982624d0800000000000000
+      internalID: -3159793429779348661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_8
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 772
+        width: 445
+        height: 539
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01449a3ebce753720800000000000000
+      internalID: 2825303755407836176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_17
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 296
+        width: 111
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc3c8cb14b40ada0800000000000000
+      internalID: -5935661563166049064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_18
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 428
+        width: 59
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54dd5cde4fa8eff30800000000000000
+      internalID: 4611275853039787333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_19
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 399
+        width: 84
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8740adeec3b16b530800000000000000
+      internalID: 3870310878290773112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dress1_20
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 268
+        width: 78
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c121726cacf7478a0800000000000000
+      internalID: -6308276669154651620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d9796fef8058ac6489544b2e96e2c380
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dress1_0: 2900772168430955084
+      dress1_1: 5251896496371931528
+      dress1_10: -2892606008201570706
+      dress1_11: -1966476771043193820
+      dress1_12: 2520893181625502337
+      dress1_13: 1919001997690941674
+      dress1_14: 817922397441436511
+      dress1_15: 14326596050391132
+      dress1_16: 5359351329069527007
+      dress1_17: -5935661563166049064
+      dress1_18: 4611275853039787333
+      dress1_19: 3870310878290773112
+      dress1_2: -5782071777078943572
+      dress1_20: -6308276669154651620
+      dress1_3: 1108046325065492289
+      dress1_4: 6651365154912258725
+      dress1_5: -7183666064889175577
+      dress1_6: 3845498110809744567
+      dress1_7: -3159793429779348661
+      dress1_8: 2825303755407836176
+      dress1_9: -1092786004620016712
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
