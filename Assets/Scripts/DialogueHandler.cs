@@ -29,7 +29,7 @@ namespace Yarn.Unity
             //vs = GameObject.FindFirstObjectByType<InMemoryVariableStorage>();
             dr.AddCommandHandler<string>("setVex", setVex);
             dr.AddCommandHandler<string>("setRobo", setRobo);
-            runNode("Cutscene1");
+            //runNode("Cutscene1");
         }
 
         // Update is called once per frame
@@ -84,6 +84,17 @@ namespace Yarn.Unity
         public void runNode(string nodeName)
         {
             StartDialogue(nodeName);
+        }
+
+        public void showSprites()
+        {
+            portrait.gameObject.SetActive(true);
+            portrait2.gameObject.SetActive(true);
+        }
+        public void hideSprites()
+        {
+            portrait.gameObject.SetActive(false);
+            portrait2.gameObject.SetActive(false);
         }
 
         public void cutscene1()

@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 public class CutsceneScript : MonoBehaviour
 {
@@ -13,17 +14,19 @@ public class CutsceneScript : MonoBehaviour
     public GameObject imageDisplay;
     public GameObject mainMenu;
     int imageNum = 0;
+    int dialogueNum = 0;
     Camera mainCam;
     public AudioSource[] cutsceneMusic;
     //public AudioClip[] musicArray;
     AudioSource currentAudio;
     float audioTime = 0;
+    public DialogueHandler dh;
     private void Awake()
     {
         //Debug.Log("hit1");
         mainCam = Camera.main;
         isPlaying = false;
-        currentAudio = cutsceneMusic[0];
+        //currentAudio = cutsceneMusic[0];
     }
 
     private void OnEnable()
@@ -32,7 +35,7 @@ public class CutsceneScript : MonoBehaviour
     }
     void Update()
     {
-        if (clickInput.action.WasPressedThisFrame() && mainMenu.gameObject.activeSelf == false)
+        /*if (clickInput.action.WasPressedThisFrame() && mainMenu.gameObject.activeSelf == false)
         {
             Debug.Log("mouseClick");
             imageNum += 1;
@@ -47,33 +50,59 @@ public class CutsceneScript : MonoBehaviour
             }
             Debug.Log(imageNum);
             //cutsceneMusic.Play();
-        }
+        }*/
     }
     public void startCutscene()
     {
         isPlaying = true;
-        cutsceneMusic[0].Play();
-        StartCoroutine(LoadGame());
+        //cutsceneMusic[0].Play();
+        //StartCoroutine(LoadGame());
         //print("started music " + cutsceneMusic[0].isPlaying);
+    }
+
+    public void switchImage(int dialogueNum, int sceneNum)
+    {
+        if(sceneNum == 1)
+        {
+            if(dialogueNum == 1)
+            {
+                print("switch setting");
+                imageNum += 1;
+                if (imageNum < imageArray.Length)
+                {
+                    print("switch image");
+                    displaySlide(imageNum);
+                }
+                dh.showSprites();
+            }
+        }
+    }
+
+    public void advanceImage(int sn)
+    {
+        
+        dialogueNum++;
+        print(dialogueNum);
+        switchImage(dialogueNum, sn);
     }
 
     public void displaySlide(int slideNum)
     {
         
         imageDisplay.gameObject.GetComponent<Image>().sprite = imageArray[imageNum];
-        audioTime = currentAudio.time;
+        //audioTime = currentAudio.time;
         
         switch (imageNum)
         {
             case 4:
                 //print("panel 4");
-                currentAudio = cutsceneMusic[1]; 
-                cutsceneMusic[1].time = audioTime;
+                //currentAudio = cutsceneMusic[1]; 
+                //cutsceneMusic[1].time = audioTime;
                 StartCoroutine("FadeOut", 1);
                 break;
             case 8:
-                currentAudio = cutsceneMusic[2];
-                cutsceneMusic[2].time = audioTime;
+                //currentAudio = cutsceneMusic[2];
+                //cutsceneMusic[2].time = audioTime;
                 //cutsceneMusic[2].Play();
                 StartCoroutine("FadeOut", 2);
                 //StartCoroutine("transitionSong", 1);
@@ -81,8 +110,8 @@ public class CutsceneScript : MonoBehaviour
                 //cutsceneMusic[1].Stop();
                 break;
             case 12:
-                currentAudio = cutsceneMusic[3];
-                cutsceneMusic[3].time = audioTime;
+                //currentAudio = cutsceneMusic[3];
+                //cutsceneMusic[3].time = audioTime;
                 //cutsceneMusic[3].Play();
                 StartCoroutine("FadeOut", 3);
                 break;

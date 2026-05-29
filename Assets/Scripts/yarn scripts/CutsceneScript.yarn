@@ -6,9 +6,9 @@ My first ever Yarn script in Unity!
 
 ===
 
-title: Cutscene1
+title: CutsceneTest
 ---
-Vex: this is cutscene 1
+Vex: this is a test cutscene
 <<setRobo robo>>
 EL1: i'm EL1-5E!
 EL1: Vex do you hate me
@@ -18,6 +18,24 @@ EL1: Vex do you hate me
     EL1: should i just kill myself
 <<setVex vex>>
 Vex: uh...anyways
+
+===
+
+title: Opening
+---
+VEX: A moment that happened fifteen years ago feels like it was yesterday.
+VEX: Lashes fluttered towards the neck of her gifted spruce violin. Her fingers danced across strings with methodic passion.
+VEX: She played notes of Heaven from her shoulder, enchanting the nation as much as a young prodigy could.
+VEX: My hands shook across piano keys while I struggled to keep up. I was confused. I didn't know yet what I wanted from life.
+VEX: All I knew in that instance was that I wanted her.
+<<jump Dialogue1>>
+===
+
+title:Dialogue1
+---
+VEX: Day 72 of Rehabilitation Project E. 
+VEX: The system is capable of turning on. The unit can perform basic functions such as opening its eyes and nodding its head, but there is no ‘thought process’ behind its motions.
+VEX: I’ve tried so many routing combinations with its internal circuitry, but I’m afraid this is a newer ASCO model which I’m not as familiar with...
 
 ===
 
