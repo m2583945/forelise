@@ -23,19 +23,86 @@ Vex: uh...anyways
 
 title: Opening
 ---
-VEX: A moment that happened fifteen years ago feels like it was yesterday.
-VEX: Lashes fluttered towards the neck of her gifted spruce violin. Her fingers danced across strings with methodic passion.
-VEX: She played notes of Heaven from her shoulder, enchanting the nation as much as a young prodigy could.
-VEX: My hands shook across piano keys while I struggled to keep up. I was confused. I didn't know yet what I wanted from life.
-VEX: All I knew in that instance was that I wanted her.
+A moment that happened fifteen years ago feels like it was yesterday.
+Lashes fluttered towards the neck of her gifted spruce violin. Her fingers danced across strings with methodic passion.
+She played notes of Heaven from her shoulder, enchanting the nation as much as a young prodigy could.
+My hands shook across piano keys while I struggled to keep up. I was confused. I didn't know yet what I wanted from life.
+All I knew in that instance was that I wanted her.
 <<jump Dialogue1>>
 ===
 
 title:Dialogue1
 ---
-VEX: Day 72 of Rehabilitation Project E. 
-VEX: The system is capable of turning on. The unit can perform basic functions such as opening its eyes and nodding its head, but there is no ‘thought process’ behind its motions.
-VEX: I’ve tried so many routing combinations with its internal circuitry, but I’m afraid this is a newer ASCO model which I’m not as familiar with...
+<<setVex vexTired>>
+VEX: Recording: Day 71 of attempting to nurse the most important project I’ve ever had back to health. 
+VEX: EL1-5e.
+VEX: 71 long days of tweaking, researching, venturing outdoors to scavenge for parts, and coming back to try all over again.
+VEX: It’s grueling work, being by my lonesome while I try and make a miracle happen.
+VEX: All I need is to do is power the unit on to make sure its body works. It doesn’t even need to talk back to me, yet. 
+VEX: God, I miss talking to people. I wish I could have a conversation with someone. With anyone.
+VEX: I keep telling myself to keep it together. That I will succeed and it’s only a matter of time before I can get its systems up and running.
+VEX: And only after I get its systems on can I hope to speak with her again.
+VEX: T-3. Unit T-3. Why have I never seen this model before? Why can I hardly find any information about it online?
+VEX: Sigh. I suppose there are still routing combinations with its internal circuitry I haven’t tried, yet.
 
 ===
+
+title:Dialogue2
+---
+<<setVex vexNeutral>>
+VEX: Okay. It’s a long shot, but–
+<<setVex vexSurprised>>
+VEX: . . . !
+<<setRobo roboWhiteEyes>>
+EL1-5e: Hello. Welcome ASCO UNIT T-3, a companion to suit all your flying needs.
+EL1-5e: My name has been set to EL1-5e. Please prepare for me to awaken momentarily.
+<<hideSprites sprites>>
+Oh shit. Oh God, it’s on. Why’s it sound like that? Let me consult my manual, and –
+<<setRobo roboSurprised>>
+EL1-5e: H-h-hello? 
+<<setVex vexSurprised>>
+VEX:AH!
+<<setRobo roboSurprised>>
+EL1-5e:Ah?
+===
+
+title: Maintenance1
+---
+<<setVex vexNeutral>>
+VEX: Phew. It’s been a long, but productive day. EL1-5e, how are you holding up?
+<<endDialogue end>>
+===
+
+title: Maintenance2
+---
+<<setVex vexNeutral>>
+VEX: And don’t feel the need to lie. I’m an engineer, not a customer.
+<<endDialogue end>>
+===
+
+title: Maintenance3
+---
+<<setRobo roboNeutral>>
+EL1-5e: I feel. . . uncomfortable, but not in pain.
+<<endDialogue end>>
+===
+
+title: Maintenance4
+---
+<<setVex vexNeutral>>
+VEX: Good job, EL1-5e.
+<<setRobo roboBlush>>
+EL1-5e: Of course.
+<<jump Dialogue6>>
+===
+
+title: Dialogue6
+---
+<<setRobo roboNeutral>>
+EL1-5e: If I may ask. . . why have you brought me here?
+<<setVex vexNeutral>>
+VEX:All that’s left is to log my progress for the day. So much to write down. I’ll need to make sure my backup servers are still in order. Not to mention. . .
+
+===
+
 
