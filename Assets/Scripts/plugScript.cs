@@ -17,11 +17,15 @@ public class plugScript : MonoBehaviour
     char socketChar = ' ';
     char matchChar = ' ';
     GameObject socket;
+
+    int plugsDone = 0;
+
     void Start()
     {
         startPos = this.transform.position;
         pg = GameObject.Find("pluggame").gameObject.GetComponent<plugGame>();
         matchChar = this.gameObject.name[this.gameObject.name.Length - 1];
+
     }
 
     // Update is called once per frame
@@ -53,6 +57,7 @@ public class plugScript : MonoBehaviour
             print("matched");
             this.gameObject.SetActive(false);
             socket.gameObject.SetActive(false);
+
         }
         else
         {
@@ -98,7 +103,7 @@ public class plugScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         //Debug.Log(col.gameObject.name);
-        print("entered");
+        //print("entered");
         socketName = col.gameObject.name;
         print(socketName);
         if (socketName.StartsWith("socket"))

@@ -24,10 +24,12 @@ public class MemoryScramble : MonoBehaviour
 
     public Button continueButton;
     int pairs;
-    
+    minigameHandler mh;
+
 
     void Start()
     {
+        mh = GameObject.Find("scriptholder").gameObject.GetComponent<minigameHandler>();
         //cardListLength = cardList1.Length;
         clicks = 0;
         fillCardNums(cardNumberConverter);
@@ -97,17 +99,17 @@ public class MemoryScramble : MonoBehaviour
             card1.gameObject.GetComponent<Image>().sprite = cardImages[cardSprite1];
             
             clicks++;
-            print("got first card");
+            //print("got first card");
             return;
         }
         if(clicks > 0)
         {
             card2 = cards[cardNum];
-            print("got second card");
+            //print("got second card");
             card2.gameObject.GetComponent<Image>().sprite = cardImages[cardSprite2];
             if(card1 == card2)
             {
-                print("same card");
+                //print("same card");
                 return;
             }
             else
@@ -132,7 +134,8 @@ public class MemoryScramble : MonoBehaviour
         }
         if(pairs == cardImages.Length)
         {
-            continueButton.gameObject.SetActive(true);
+            //continueButton.gameObject.SetActive(true);
+            mh.nextGame();
         }
 
         //Image current = card.gameObject.GetComponent<Image>();        
@@ -141,7 +144,7 @@ public class MemoryScramble : MonoBehaviour
     IEnumerator ResetCards()
     {
         yield return new WaitForSeconds(1f);
-        print("not a match");
+        //print("not a match");
         clicks = 0;
         card1.GetComponent<Image>().sprite = cardBack;
         card2.GetComponent<Image>().sprite = cardBack;

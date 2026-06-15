@@ -65,11 +65,15 @@
     <Compile Include="Assets\Scripts\plugGame.cs" />
     <Compile Include="Assets\Scripts\plugScript.cs" />
     <Compile Include="Assets\Scripts\soundEffects.cs" />
+    <Compile Include="Assets\Scripts\dialogueAudio.cs" />
     <Compile Include="Assets\Scripts\hackGame.cs" />
     <Compile Include="Assets\Scripts\maintenance.cs" />
+    <Compile Include="Assets\Scripts\minigameHandler.cs" />
     <Compile Include="Assets\Scripts\dressCode.cs" />
     <Compile Include="Assets\Scripts\CutsceneScript.cs" />
     <Compile Include="Assets\Scripts\Slideshow.cs" />
+    <Compile Include="Assets\Scripts\assemblyGame.cs" />
+    <Compile Include="Assets\Scripts\assemblyPiece.cs" />
     <Compile Include="Assets\Scripts\EmotionSlide.cs" />
     <Compile Include="Assets\Scripts\DialogueHandler.cs" />
     <Compile Include="Assets\Scripts\MemoryScramble.cs" />

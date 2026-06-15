@@ -15,13 +15,15 @@ public class plugGame : MonoBehaviour
     public Sprite filledSocket;
     public bool plugSelected = false;
     public GameObject currentPlug;
+    int plugsDone = 0;
 
     Vector3 startPos;
     Vector3 currentPos;
+    minigameHandler mh;
 
     void Start()
     {
-          
+        mh = GameObject.Find("scriptholder").gameObject.GetComponent<minigameHandler>();
     }
 
     // Update is called once per frame
@@ -66,6 +68,12 @@ public class plugGame : MonoBehaviour
     {
         numFilled++;
         fills[num - 1].gameObject.SetActive(true);
+        if(numFilled == 4)
+        {
+            print("4 plugs done");
+            mh.nextGame();
+        }
+        
         //sockets[num-1].gameObject.GetComponent<SpriteRenderer>().sprite = filledSocket;
     }
 }

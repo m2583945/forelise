@@ -16,6 +16,13 @@ public class soundEffects : MonoBehaviour
         
     }
 
+    /*
+     * switchSound effectNums:
+     * 0-panel open
+     * 1-screw
+     * 2-typing sound
+     * 3-power down
+     */
     public void switchSound(int num)
     {
         sfx.clip = sounds[num];

@@ -25,8 +25,10 @@ public class hackGame : MonoBehaviour
     float timePerChar = 0.05f;
 
     bool runType = true;
+    minigameHandler mh;
     void Start()
     {
+        mh = GameObject.Find("scriptholder").gameObject.GetComponent<minigameHandler>();
         currentMsg = ">Accessing file...\r\n>EL1-5E root access requested\r\n>Enter password:";
         guessText = guess.gameObject.GetComponent<TMP_InputField>().text.ToString();
         System.Random randNum = new System.Random();
@@ -83,14 +85,17 @@ public class hackGame : MonoBehaviour
 
     public void checkGuess()
     {
+        int correctNums = 0;
         for (int i = 0; i < check.Length; i++)
         {
             char j = guessText[i];
             check[i].text = j.ToString();
             if (j == password[i])
             {
+                correctNums++;
                 check[i].color = Color.green;
                 check[i].fontStyle = FontStyles.Bold;
+
                 continue;
             }
             if (password.Contains(j))
@@ -106,10 +111,21 @@ public class hackGame : MonoBehaviour
             {
                 check[i].color = Color.red;
                 check[i].fontStyle = FontStyles.Normal;
-            }
-                
+            }       
                 
         }
+        if (correctNums == 4)
+        {
+            StartCoroutine("winGame");
+        }
         guessText = "";
+    }
+
+    IEnumerator winGame()
+    {
+        yield return new WaitForSeconds(1f);
+        //print("not a match");
+        mh.nextGame();
+
     }
 }

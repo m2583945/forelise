@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using Yarn;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
+using UnityEngine.Device;
+using UnityEngine.UI;
+using Yarn;
 
 namespace Yarn.Unity
 {
@@ -21,6 +22,12 @@ namespace Yarn.Unity
         public Sprite[] vex;
         public Sprite[] robogirl;
         public GameObject characterName;
+        maintenance ma;
+        soundEffects se;
+        minigameHandler mh;
+
+        public Image cgbackground;
+        public Sprite[] cgImages;
 
 
         // Start is called before the first frame update
@@ -28,12 +35,18 @@ namespace Yarn.Unity
         {
 
             characterName.gameObject.SetActive(true);
+            ma = GameObject.Find("scriptholder").gameObject.GetComponent<maintenance>();
+            se = GameObject.Find("scriptholder").gameObject.GetComponent<soundEffects>();
+            mh = GameObject.Find("scriptholder").gameObject.GetComponent<minigameHandler>();
             //vs = GameObject.FindFirstObjectByType<InMemoryVariableStorage>();
             dr.AddCommandHandler<string>("setVex", setVex);
             dr.AddCommandHandler<string>("setRobo", setRobo);
             dr.AddCommandHandler<string>("noName", noName);
             dr.AddCommandHandler<string>("hideSprites", hideSprites);
             dr.AddCommandHandler<string>("endDialogue", EndDialogue);
+            dr.AddCommandHandler<int>("runMaintenance", runMaintenance);
+            dr.AddCommandHandler<int>("playSound", playSound);
+            dr.AddCommandHandler<int>("showCG", showCG);
             print("adding commands");
             //runNode("Cutscene1");
         }
@@ -50,14 +63,31 @@ namespace Yarn.Unity
         {
 
         }
-
-
+        public void showCG(int num)
+        {
+            /*
+             * 0 - background
+             * 1 - violin
+             * 2 - vexel15e hugging
+             * 3 - flashback1
+             */
+            cgbackground.gameObject.SetActive(true);
+            cgbackground.gameObject.GetComponent<Image>().sprite = cgImages[num];   
+        }
+        public void playSound(int num)
+        {
+            se.switchSound(num);
+        }
         public void setRobo(string spriteName)
         {
             characterName.GetComponent<TMPro.TextMeshProUGUI>().text = "EL1-5E";
             characterName.gameObject.SetActive(true);
             portrait2.gameObject.SetActive(true);
             portrait2.gameObject.GetComponent<Image>().enabled = true;
+            if (cgbackground.gameObject.activeSelf == true)
+            {
+                cgbackground.gameObject.SetActive(false);
+            }
             if (portrait.gameObject.active == true)
             {
                 portrait.gameObject.SetActive(false);
@@ -105,10 +135,14 @@ namespace Yarn.Unity
         }
         public void setVex(string spriteName)
         {
+            if(cgbackground.gameObject.activeSelf == true)
+            {
+                cgbackground.gameObject.SetActive(false);
+            }
             characterName.GetComponent<TMPro.TextMeshProUGUI>().text = "Vex";
             characterName.gameObject.SetActive(true);
             portrait.gameObject.SetActive(true);
-
+            portrait.gameObject.GetComponent<Image>().enabled = true;
             portrait2.gameObject.SetActive(false);
 
             if (spriteName == "vexNeutral")
@@ -148,6 +182,23 @@ namespace Yarn.Unity
         {
             characterName.GetComponent<TMPro.TextMeshProUGUI>().text = "Everyone";
             portrait.gameObject.GetComponent<Image>().enabled = false;
+        }
+
+        public void runMaintenance(int seg)
+        {
+            ma.activatePanel();
+            ma.segment = seg;
+        }
+        public void maintenanceScrew()
+        {
+            if(ma.gameObject.active == true)
+            {
+                for (int i = 0; i < ma.screws.Length; i++)
+                {
+                    ma.screws[i].gameObject.GetComponent<Button>().interactable = true;
+                }
+            }
+
         }
         
         public void runNode(string nodeName)
