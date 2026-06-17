@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8e411b4374764d14583185d4647dfe10
+guid: 0a12b969eec98854f984bafc9ef2b5a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2076173241749711872
-    second: proto_console51926_0
+      213: 7575909777125446255
+    second: Eye-export_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: proto_console51926_0
+      name: Eye-export_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2560
-        height: 1360
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00ca9a6309c00dc10800000000000000
-      internalID: 2076173241749711872
+      spriteID: f6298fbadc9032960800000000000000
+      internalID: 7575909777125446255
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cadf1b6228fc0b643892928bf3f8d71f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -172,11 +172,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      proto_console51926_0: 2076173241749711872
+      Eye-export_0: 7575909777125446255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
