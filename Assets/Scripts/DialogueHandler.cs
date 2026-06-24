@@ -29,6 +29,9 @@ namespace Yarn.Unity
         public Image cgbackground;
         public Sprite[] cgImages;
 
+        int tereseEnding = 0;
+        int eliseEnding = 0;
+
 
         // Start is called before the first frame update
         void Start()
@@ -47,6 +50,8 @@ namespace Yarn.Unity
             dr.AddCommandHandler<int>("runMaintenance", runMaintenance);
             dr.AddCommandHandler<int>("playSound", playSound);
             dr.AddCommandHandler<int>("showCG", showCG);
+            dr.AddCommandHandler<int>("pickChoice1", pickChoice1);
+            dr.AddCommandHandler<int>("choice1", choice1);
             print("adding commands");
             //runNode("Cutscene1");
         }
@@ -68,12 +73,20 @@ namespace Yarn.Unity
             /*
              * 0 - background
              * 1 - violin
-             * 2 - vexel15e hugging
+             * 2 - vexel15e face touch
              * 3 - flashback1
+             * 4 - flashback2
+             * 5 - vexel15e hugging
+             * 6 - graduation
+             * 7 - flashback promise1
+             * 8 - flashback promise2
+             * 9-11 - endings 1-3
              */
             cgbackground.gameObject.SetActive(true);
             cgbackground.gameObject.GetComponent<Image>().sprite = cgImages[num];   
         }
+
+
         public void playSound(int num)
         {
             se.switchSound(num);
@@ -138,6 +151,7 @@ namespace Yarn.Unity
             if(cgbackground.gameObject.activeSelf == true)
             {
                 cgbackground.gameObject.SetActive(false);
+                
             }
             characterName.GetComponent<TMPro.TextMeshProUGUI>().text = "Vex";
             characterName.gameObject.SetActive(true);
@@ -269,5 +283,30 @@ namespace Yarn.Unity
             allowClicks = false;
         }
 
+        public void pickChoice1(int choice)
+        {
+            if(choice == 1)
+            {
+                tereseEnding++;
+            }
+            if(choice == 2)
+            {
+                eliseEnding++;
+            }
+        }
+
+        public void choice1(int num)
+        {
+            if(tereseEnding == 1)
+            {
+                StartDialogue("choice2a", "robo");
+            }
+            else
+            {
+                StartDialogue("choice2b", "vex");
+            }
+        }
     }
+
+
 }

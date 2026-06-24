@@ -42,6 +42,9 @@ public class minigameHandler : MonoBehaviour
         {
             minigames[4].gameObject.SetActive(true);
         }
+        if(day == 3)
+        { 
+        }
     }
     public void endDay(int day)
     {

@@ -23,6 +23,7 @@ Vex: uh...anyways
 
 title: Opening
 ---
+<<showCG 1>>
 A moment that happened fifteen years ago feels like it was yesterday.
 Lashes fluttered towards the neck of her gifted spruce violin. Her fingers danced across strings with methodic passion.
 She played notes of Heaven from her shoulder, enchanting the nation as much as a young prodigy could.
@@ -33,6 +34,7 @@ All I knew in that instance was that I wanted <i>her</i>.
 
 title:Dialogue1
 ---
+<<showCG 0>>
 <<setVex vexTired>>
 VEX: Recording: Day 71 of attempting to nurse the most important project I’ve ever had back to health. 
 VEX: EL1-5e.
@@ -185,6 +187,7 @@ minigame test
 <<startDay 1>>
 <<endDialogue end>>
 ===
+
 title: Maintenance1
 ---
 VEX: Phew. It’s been a long, but productive day. EL1-5e, how are you holding up?
@@ -243,6 +246,7 @@ EL1-5e, at least in the form she’s in now, is meant to be a short-term compani
 
 title: choice1a
 ---
+<<pickchoice1 1>>
 <<setVex vexNeutral>>
 VEX: Fine, you’ve convinced me.
 VEX: Lights will be off. I’ll be gone for the next ten hours. And I’ll still need to lower your power capacitor for the night. But, you will remain powered on.
@@ -264,6 +268,7 @@ VEX: Right. Well, see you tomorrow, EL1.
 
 title: choice1b
 ---
+<<pickchoice1 2>>
 <<setVex vexGlasses>>
 VEX: Rest assured, as a seasoned engineer, you’ll be just fine. You won’t even realize you were asleep. One moment you’re here, and the next moment, it’s the morning.
 <<setRobo roboScared>>
@@ -284,5 +289,210 @@ title: flashback1
 ???: It’s a shame you dropped out of the orchestra club, VEX. I could put in a word for you if you’d ever like to get back in.
 VEX: The only reason I’d ever do that is for you.
 VEX: I just wish I could take you with me to the robotics engineering club.
+???: Hmm. And what would we do there, pray tell?
+VEX: I would build you a robot. Maybe one to assist you in your violin playing.
+???: How about one to better help me confess my feelings?
+VEX: Hmm. . .  I’m not sure how I’d go about building something of such a subjective nature. . .
+VEX: Wait, what– 
+<<showCG 4>>
+???: Oh, VEX. Never change. It was just a silly thought.
+???: You don’t need to build anything for me to love you.
+VEX: Love. . . me?
+???: How about this, VEX? If the two of us reach our thirties and remain unwedded, will you propose to me then?
+VEX: Oh. . . yes! I do. I mean, I will. If neither of us are married then, that is.‹
+<<showCG 3>>
+???: . . . You know, I must get back soon. My caretakers would kill me if they knew I was out slacking like this.
+VEX: Then they don’t have to know.
+I’d do anything to hear her play again.
+<<jump Dialogue5>>
+===
+
+title: Dialogue5
+---
+<<setVex vexNeutral>>
+VEX: Good morning, EL1.
+<<setRobo roboNeutral>>
+EL1-5e: Good morning, VEX. How was your sleep?
+<<setVex vexConfused>>
+VEX: You know, you don’t need to ask me these obligatory-sort of questions. I’m not your customer.
+<<setRobo roboNeutral>>
+EL1-5e: You are right. I don’t need to.
+EL1-5e: But, how do I say this. . .
+<<setRobo roboHappy>>
+EL1-5e: I simply want to.
+<<hideSprites sprites>>
+I roll my eyes, but a smile creeps out from my teeth.
+<<setVex vexNeutral>>
+VEX: To answer your question, I slept well, for once.
+<<setRobo roboBlush>>
+EL1-5e: I’m glad to hear that.
+<<choice1 0>>
+===
+
+title: choice2a
+---
+<<setRobo roboConfused>>
+EL1-5e: I did, as well. Last night, I think I dreamed.
+<<setVex vexSurprised>>
+VEX: Oh? What of?
+<<setRobo roboNeutral>>
+EL1-5e: Hard to define in words you would understand. I saw shapes and blurs, and felt something. . . warm. Pliable. Comfortable.
+<<setVex vexThinking>>
+VEX: Comfortable, hmm?
+
+===
+
+title: choice2b
+---
+VEX: So? How was your sleep?
+EL1-5e: Troublesome. I may have dreamed last night.
+VEX: Oh? What of?
+EL1-5e: Something dark. Something all-encompassing, and inevitable. It’s hard to describe. I felt. . . fear.
+VEX: We all have nightmares from time to time. 
+<<jump Dialogue6>>
+===
+
+title: Dialogue6
+---
+<<setVex vexNeutral>>
+VEX: Alright, it’s time for daily calibration. You know the drill. Please remain still, and let me know if...
+<<setRobo roboNeutral>>
+EL1-5e: If I feel discomfort, I know. You could never make me feel uncomfortable, VEX.
+<<setVex vexConfused>>
+VEX: But you do feel discomfort from time to time, yes?
+<<setRobo roboScared>>
+EL1-5e: I do.
+EL1-5e: I once had a passenger on a flight attempt to grab me by the waist to get my attention.
+<<setVex vexThinking>>
+VEX: Oh, no? How did that end?
+<<setRobo roboNeutral>>
+EL1-5e: Well, my protocol was programmed to respond very strictly to any act of violence during flights.
+<<setRobo roboBlush>>
+EL1-5e: I turned around and. . . oh, it’s embarrassing to recall. I feel my internal systems warming up even trying to speak of it.
+<<setVex vexNeutral>>
+VEX: I can tell. Ehe, please, I’m intrigued.
+<<setRobo roboBlush>>
+EL1-5e: Well. . .
+EL1-5e: I turned around and disarmed him, breaking his wrist in the process.
+EL1-5e: It turned out that all he was holding was an empty cup of ice, and he just wanted a refill on his drink...
+EL1-5e: My supervisors were very angry with me. As were his lawyers with the flight company, and with ASCO.
+<<setVex vexSurprised>>
+VEX: Oh my god.
+VEX: That’s. . . hahaha. Ahahaha.
+<<setRobo roboBlush>>
+EL1-5e: Don’t laugh! It isn’t funny.
+<<setVex vexNeutral>>
+VEX: Then why are you smiling?
+VEX: What drink did he even want, anyway?
+<<setRobo roboBlush>>
+EL1-5e: A Bloody Mary with Irish cream. . .
+<<setVex vexTired>>
+VEX: You can’t be serious.
+===
+
+title: Maintenance5
+---
+EL1-5e: VEX, if I may ask. . .
+EL1-5e: What is the purpose in all of this?
+<<endDialogue end>>
+===
+
+title: Maintenance6
+---
+VEX: Well, you’re currently composed of a set of mismatched parts. Each time I leave you alone for a significant period of time, I’ve got to make sure that everything is still working properly before I really get in the weeds with you.
+VEX: Sort of like tuning an old guitar.
+<<endDialogue end>>
+===
+
+title: Maintenance7
+---
+EL1-5e: Thank you for that explanation. But that is not what I meant.
+EL1-5e: I meant why are you fixing me? You are not associated with ASCO, nor any major airline companies.
+EL1-5e: So, if not for my original purpose, to what end am I being set to. . . ?
+<<endDialogue end>>
+===
+
+title: Maintenance8
+---
+VEX: And how do you figure that I’m not working with ASCO?
+<<jump Dialogue7>>
+===
+
+title: Dialogue7
+---
+<<showCG 0>>
+<<setRobo roboNeutral>>
+EL1-5e: I assume it from the way you speak.
+<<setVex vexNeutral>>
+VEX: Oh, I suppose ASCO’s engineers speak a little more smarty-pants than I do, hmm?
+<<setRobo roboBlush>>
+EL1-5e: Ehehehe. . . not exactly.
+EL1-5e: I quite enjoy your personality, actually. Which is not a customer-service lie, by the way.
+<<setVex vexNeutral>>
+VEX: Aha, how reassuring.
+<<setVex vexGlasses>>
+VEX: Alright, morning calibration complete. It’s time to get in the weeds, EL1-5e. Are you ready?
+<<setRobo roboNeutral>>
+EL1-5e: With you as my guide.
+<<startDay 2>>
+<<endDialogue end>>
+===
+
+title: Maintenance9
+---
+EL1-5e: That was. . . more intense than what I have been accustomed to.
+<<endDialogue end>>
+===
+
+title: Maintenance10
+---
+VEX: Sorry.
+<<endDialogue end>>
+===
+
+title: Maintenance11
+---
+EL1-5e: VEX, you did not answer my question this morning.
+VEX: Mm-hmm.
+EL1-5e: For what purpose did you bring me back, exactly?
+<<endDialogue end>>
+===
+
+title: Maintenance12
+---
+VEX: Don’t worry about such things. Just focus on telling me if something hurts.
+EL1-5e: . . . . . . .
+EL1-5e: I am hurting, VEX.
+VEX: . . .
+VEX: Calibration complete.
+<<jump Dialogue8>>
+===
+
+title: Dialogue8
+---
+<<showCG 0>>
+<<setRobo roboConfused>>
+EL1-5e: Why do you suppose I was thrown out?
+<<setVex vexConfused>>
+VEX: Hm?
+<<setRobo roboNeutral>>
+EL1-5e: You told me yourself.
+EL1-5e: I was found in an ASCO scrapyard.
+EL1-5e: That surely means that something was wrong with me to warrant being retired.
+<<setVex vexConfused>>
+VEX: Well, you were also hardly more than your head and spinal cord when I first found you.
+<<setVex vexNeutral>>
+VEX: More than likely, you experienced hardware malfunction and ASCO found it more trouble than it was worth to keep you.
+<<setVex vexThinking>>
+VEX: I couldn’t find much information about your unit’s operating manual online. I almost wonder if T-3 units were discontinued, for whatever reason. . .
+<<setRobo roboClosedEyes>>
+EL1-5e:  . . .
+EL1-5e: No, I fear it may be something more than that. Something deeper.
+<<setRobo roboNeutral>>
+EL1-5e: It was commonplace for T-3 units to be sent back to a manufacturing facility for reprogramming to resolve any mistakes made.
+EL1-5e: Things like pathing glitches. Sub-optimal luggage placement. Conversations with passengers turned sour.
+<<setVex vexGlasses>>
+VEX: Or accidentally breaking a passenger’s wrist.
+<<endDialogue end>>
 ===
 
