@@ -31,7 +31,7 @@ public class CutsceneScript : MonoBehaviour
 
     private void OnEnable()
     {
-        clickInput.action.Enable();
+        //clickInput.action.Enable();
     }
     void Update()
     {
@@ -151,7 +151,7 @@ public class CutsceneScript : MonoBehaviour
     }
     private void OnDisable()
     {
-        clickInput.action.Disable();
+        //clickInput.action.Disable();
     }
     
     
