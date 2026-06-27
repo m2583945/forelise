@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Device;
 using UnityEngine.UI;
 using Yarn;
+using static Unity.Collections.AllocatorManager;
 
 namespace Yarn.Unity
 {
@@ -27,6 +28,7 @@ namespace Yarn.Unity
         minigameHandler mh;
 
         public Image cgbackground;
+        public Image blackScreen;
         public Sprite[] cgImages;
 
         int tereseEnding = 0;
@@ -52,6 +54,7 @@ namespace Yarn.Unity
             dr.AddCommandHandler<int>("showCG", showCG);
             dr.AddCommandHandler<int>("pickChoice1", pickChoice1);
             dr.AddCommandHandler<int>("choice1", choice1);
+            dr.AddCommandHandler<int>("handleFade", handleFade);
             print("adding commands");
             //runNode("Cutscene1");
         }
@@ -86,7 +89,10 @@ namespace Yarn.Unity
             cgbackground.gameObject.GetComponent<Image>().sprite = cgImages[num];   
         }
 
-
+        public void testFunction()
+        {
+            print("testing");
+        }
         public void playSound(int num)
         {
             se.switchSound(num);
@@ -185,6 +191,38 @@ namespace Yarn.Unity
             }
             //portrait.gameObject.GetComponent<Image>().SetNativeSize();
         }
+
+        public void handleFade(int value)
+        {
+            Animator bsa = blackScreen.GetComponent<Animator>();
+            bsa.speed = 1;
+            if (value == 0) // fade to black
+            {
+                print("fading to black");
+                bsa.Play("fadetoblack");
+
+            }
+            if(value == 1) //fade from black
+            {
+                bsa.Play("fadefromblack");
+            }
+            if(value == 2) //slowly fade to black
+            {
+                bsa.speed = 0.5f;
+                bsa.Play("fadetoblack");
+            }
+            else
+            {
+                bsa.Play("fadefromblack");
+            }
+            StartCoroutine("wait1sec");
+        }
+
+        public IEnumerator wait1sec()
+        {
+            yield return new WaitForSeconds(1f);
+        }
+
 
         void noName(string x)
         {

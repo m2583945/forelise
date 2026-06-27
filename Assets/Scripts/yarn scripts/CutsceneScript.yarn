@@ -1,8 +1,8 @@
 ﻿title: declareVariables
 ---
-<<declare $roboName = "robo">>
+<<declare $roboName = "EL1-5e">>
 <<declare $endingAPoints = 0>>
-<<declare $endingBPoints = 0>>
+<<declare $endingBPoints = 2>>
 ===
 title: Start
 ---
@@ -252,6 +252,7 @@ EL1-5e, at least in the form she’s in now, is meant to be a short-term compani
 
 title: choice1a
 ---
+<<set $endingAPoints to 1>>
 <<pickchoice1 1>>
 <<setVex vexNeutral>>
 VEX: Fine, you’ve convinced me.
@@ -274,6 +275,7 @@ VEX: Right. Well, see you tomorrow, EL1.
 
 title: choice1b
 ---
+<<set $endingBPoints to 1>>
 <<pickchoice1 2>>
 <<setVex vexGlasses>>
 VEX: Rest assured, as a seasoned engineer, you’ll be just fine. You won’t even realize you were asleep. One moment you’re here, and the next moment, it’s the morning.
@@ -546,6 +548,7 @@ EL1-5e: More sure than I’ve been of anything else in the world.
 
 title: choice3a
 ---
+<<set $endingAPoints to $endingAPoints + 1>>
 <<setVex vexGlasses>>
 VEX: You deserve to know the truth of why I’ve brought you here, EL1-5e.
 VEX: I brought you into my laboratory in an attempt to. . . solve another project, unrelated to you.
@@ -559,6 +562,7 @@ VEX: Please don’t say it like that.
 
 title: choice3b
 ---
+<<set $endingBPoints to $endingBPoints + 1>>
 <<setVex vexGlasses>>
 VEX: Please don’t feel the need to worry about this.
 VEX: I know you have been burned in the past. Trust that I am not like them.
@@ -888,6 +892,7 @@ EL1-5e: When you think and refer to me, be it in your notes or when you tell ELI
 
 title: choice4a
 ---
+<<set $endingAPoints to $endingAPoints + 1>>
 <<set $roboName to "Terese">>
 <<hideSprites sprites>>
 A long beat of silence passes in the room, the only sounds emanating from the computers and the barely-perceptible sound of ELISE’s unconscious breaths.
@@ -915,6 +920,7 @@ A light chuckle burrows its way out of my throat. I wasn’t expecting that.
 
 title: choice4b
 ---
+<<set $endingBPoints to $endingBPoints + 1>>
 <<set $roboName to "EL1-5e">>
 <<setVex vexTired>>
 VEX:I can’t do that. I’m sorry.
@@ -944,11 +950,20 @@ title: Dialogue13
 <<hideSprites sprites>>
 My mouse hovers over the ‘transfer’ button on the program which will bring ELISE back into my life.
 The same program which will erase {$roboName} from existence.
+//a points are {$endingAPoints} while b points are {$endingBPoints}
+<<if $endingAPoints > $endingBPoints>>
+    <<jump endingA>>
+<<elseif $endingBPoints > 1>>
+    <<jump endingB>>
+<<else>>
+    <<jump endingC>>
+<<endif>>
 ===
 
 title: endingA
 ---
 <<showCG 12>>
+<<handleFade 0>>
 <i>“All I wish is for you to look not at her, but at me.”</i>
 This statement made by {$roboName} is what runs through my mind as I close the transfer program.
 It repeats in my head as I loosen the grips attaching {$roboName}’s limbs to the holder skeleton.
@@ -964,6 +979,7 @@ When I get back to my laboratory, {$roboName} has rearranged the room a bit.
 Things are cleaner. More organized. She’s already been putting good use to her new physical freedom.
 She gazes at me with a smile. 
 <<showCG 9>>
+<<handleFade 1>>
 {$roboName}: Welcome back.
 {$roboName}: I want to thank you again for what you’ve done for me. I’m sure letting go of ELISE could not have been easy, dear.
 VEX: No, you. . .
@@ -984,7 +1000,8 @@ VEX: What? Which is?
 VEX: . . . . . . . . . .
 One of her hands falls towards mine. Her metallic fingers lace around mine, giving me a warm squeeze.
 VEX: Right.
-<<showCG 12>>
+<<handleFade 2>>
+<<endDialogue end>>
 ===
 
 title: endingB
@@ -1001,6 +1018,7 @@ A pang of regret colors my knuckles as I grasp the sides of ELISE’s bed, watch
 But I can’t stop now.
 A few minutes pass. Then ten more go by. All are spent with me waiting, quietly, sweat gathering on my forehead as I shake with anticipation.
 Finally, the transfer finishes, and the T-3 Unit - now ELISE - opens her eyes.
+<<handleFade 1>>
 <<showCG 0>>
 <<setRobo roboSurprised>>
 ELISE: Where am I?
@@ -1016,7 +1034,7 @@ VEX: Thank goodness. I never thought I’d speak to you again. . .!
 <<hideSprites sprites>>
 I unlock the grips keeping ELISE in place. I move towards her, eyes watering.
 <<showCG 12>>
-[slap + thud of vex falling on floor SFX]
+<<playSound 5>>
 The impact of metal hits my face. I fly onto the ground, my skin stinging like never before.
 ELISE raises her new hand, looking down at it in horror. Like she isn’t used to having this level of strength. She looks back at me.
 I gaze up at her with amazement in my eyes.
@@ -1044,6 +1062,7 @@ She gathers her arms underneath her old shoulders and knees, and gently hoists t
 VEX: Wait!
 I reach out to grab her by the ankle.
 VEX: W-where are you going?
+<<handleFade 1>>
 <<showCG 10>>
 She looks down at me, anger and coldness in her eyes.
 Like she wants to stomp the everloving shit out of my head.
@@ -1055,11 +1074,14 @@ VEX: And, you won’t be out for long before ASCO assumes you’re a rogue AI an
 ELISE: I don’t care.
 ELISE: They’d be doing me a favor.
 ELISE: Goodbye, VEX.
-<<showCG 12>>
+<<playSound 4>>
+<<handleFade 2>>
+<<endDialogue end>>
 ===
 
 title: endingC
 ---
+<<handleFade 0>>
 <<hideSprites sprites>>
 <<showCG 12>>
 Even after all of the time spent chatting, laughing, and cherishing {$roboName} -
@@ -1074,6 +1096,7 @@ I should’ve never done this.
 I rush to my computer to cancel the transfer.
 My computer freezes. I stare into {$roboName}’s cold, black eyes.
 I want to jump out of my skin. I force shut my computer down -
+<<playSound 6>>
 - which results in an electric current zapping my fingers. I pull back, but realize that it has also traveled up the wires connected to {$roboName} and ELISE.
 Something smells like burnt meat.
 I rush to ELISE. 
@@ -1088,6 +1111,7 @@ Turn on.
 Turn on.
 Turn on.
 <i>TURN ON!</i>
+<<handleFade 1>>
 <<showCG 11>>
 {$roboName}’s eyes are black as night. Her jaw is stiff. She is, for all intents and purposes, an inanimate object once again.
 As is ELISE.
@@ -1102,6 +1126,7 @@ VEX: I wish to let it be known that I have never once achieved anything in my li
 VEX: That I am a failure of a scientist.
 VEX: That my legacy will be. . . 
 VEX: . . . My legacy will be nothing, in the end.
-<<showCG 12>>
+<<handleFade 2>>
+<<endDialogue end>>
 ===
 

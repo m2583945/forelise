@@ -22,6 +22,9 @@ public class soundEffects : MonoBehaviour
      * 1-screw
      * 2-typing sound
      * 3-power down
+     * 4-elise walks away (ending b)
+     * 5 - slap (ending b)
+     * 6 - zap
      */
     public void switchSound(int num)
     {

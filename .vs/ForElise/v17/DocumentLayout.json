@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\soundeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\soundeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\cutscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cutscenescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\minigamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\soundeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\soundeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\maintenance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,20 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "hackGame.cs",
-              "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\hackGame.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\hackGame.cs",
-              "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\hackGame.cs",
-              "RelativeToolTip": "Assets\\Scripts\\hackGame.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAAAH8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-14T23:47:45.268Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 7,
@@ -70,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "minigameHandler.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\minigameHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\minigameHandler.cs",
@@ -94,40 +82,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "soundEffects.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\soundEffects.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\soundEffects.cs",
               "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\soundEffects.cs",
               "RelativeToolTip": "Assets\\Scripts\\soundEffects.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBcAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T01:44:22.358Z"
+              "WhenOpened": "2026-06-05T01:44:22.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CutsceneScript.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\CutsceneScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CutsceneScript.cs",
               "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\CutsceneScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\CutsceneScript.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAewCEAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAArwCEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-13T04:15:50.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DialogueHandler.cs",
-              "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\DialogueHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueHandler.cs",
-              "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\DialogueHandler.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DialogueHandler.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAASwEYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T03:22:59.761Z",
               "EditorCaption": ""
             },
             {
@@ -138,9 +114,34 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn",
               "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn",
               "RelativeToolTip": "Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn",
-              "ViewState": "AgIAADUEAAAAAAAAAAAYwCwEAABdAAAAAAAAAA==",
+              "ViewState": "AgIAAI4DAAAAAAAAAAAAwLgDAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-06-14T22:46:37.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "hackGame.cs",
+              "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\hackGame.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\hackGame.cs",
+              "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\hackGame.cs",
+              "RelativeToolTip": "Assets\\Scripts\\hackGame.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAH8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T23:47:45.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DialogueHandler.cs",
+              "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\DialogueHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueHandler.cs",
+              "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\DialogueHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DialogueHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:22:59.761Z",
               "EditorCaption": ""
             }
           ]
