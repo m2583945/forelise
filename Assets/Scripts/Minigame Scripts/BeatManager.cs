@@ -17,8 +17,8 @@ public class BeatManager : MonoBehaviour
     //beats per minute of a song
     public float bpm;
     public float beatsBeforeHit;
-    public GameObject ball;
-    public GameObject ballPrefab;
+    public GameObject beep;
+    public GameObject beepPrefab;
 
     public AudioClip teeBallSound;
 
@@ -70,7 +70,7 @@ public class BeatManager : MonoBehaviour
     {
         if(songPosInBeats >= lastBeatNumber + beatsBeforeHit)
         {
-            ball = Instantiate(ballPrefab);
+            beep = Instantiate(beepPrefab);
             //GetComponent<TapSyncController>().SetNext(ball);
             lastBeatNumber = songPosInBeats;
             GetComponent<AudioSource>().PlayOneShot(teeBallSound, .25f);
