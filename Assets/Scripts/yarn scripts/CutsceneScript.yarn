@@ -24,7 +24,6 @@ EL1: Vex do you hate me
     EL1: should i just kill myself
 <<setVex vex>>
 Vex: uh...anyways
-
 ===
 
 title: Opening
@@ -63,8 +62,11 @@ VEX: Okay. It’s a long shot, but–
 <<setVex vexSurprised>>
 VEX: . . . !
 <<setRobo roboWhiteEyes>>
-EL1-5e: Hello. Welcome ASCO UNIT T-3, a companion to suit all your flying needs.
-EL1-5e: My name has been set to EL1-5e. Please prepare for me to awaken momentarily.
+<<jump VO1>>
+===
+
+title:Dialogue2postVO
+---
 <<hideSprites sprites>>
 Oh shit. Oh God, it’s on. Why’s it sound like that? Let me consult my manual, and –
 <<setRobo roboSurprised>>
@@ -108,6 +110,20 @@ The thing’s so much more animated than it has been the last 71 days. Moving it
 Signs of primal fear. Like a rabbit cornered.
 Whatever I did, it looks like it may have worked, in a roundabout way.
 <<jump Dialogue3>>
+===
+
+title: VO1
+---
+<<playVoice welcome>>
+EL1-5e: Hello. Welcome ASCO UNIT T-3, a companion to suit all your flying needs.
+<<jump VO2>>
+===
+
+title: VO2
+---
+<<playVoice mynameis>>
+EL1-5e: My name has been set to EL1-5e. Please prepare for me to awaken momentarily.
+<<jump Dialogue2postVO>>
 ===
 
 title: Dialogue3
@@ -307,7 +323,7 @@ VEX: Wait, what–
 ???: You don’t need to build anything for me to love you.
 VEX: Love. . . me?
 ???: How about this, VEX? If the two of us reach our thirties and remain unwedded, will you propose to me then?
-VEX: Oh. . . yes! I do. I mean, I will. If neither of us are married then, that is.‹
+VEX: Oh. . . yes! I do. I mean, I will. If neither of us are married then, that is.
 <<showCG 3>>
 ???: . . . You know, I must get back soon. My caretakers would kill me if they knew I was out slacking like this.
 VEX: Then they don’t have to know.
@@ -396,6 +412,7 @@ VEX: What drink did he even want, anyway?
 EL1-5e: A Bloody Mary with Irish cream. . .
 <<setVex vexTired>>
 VEX: You can’t be serious.
+<<runMaintenance 3>>
 ===
 
 title: Maintenance5
@@ -470,6 +487,7 @@ title: Maintenance12
 ---
 VEX: Don’t worry about such things. Just focus on telling me if something hurts.
 EL1-5e: . . . . . . .
+<<playVoice hurting>>
 EL1-5e: I am hurting, VEX.
 VEX: . . .
 VEX: Calibration complete.
@@ -1021,7 +1039,9 @@ Finally, the transfer finishes, and the T-3 Unit - now ELISE - opens her eyes.
 <<handleFade 1>>
 <<showCG 0>>
 <<setRobo roboSurprised>>
+<<playVoice whereami>>
 ELISE: Where am I?
+<<playVoice isthatyou>>
 ELISE: Vex? Is that y–
 <<setRobo roboScared>>
 ELISE: . . . . . . . . . . .

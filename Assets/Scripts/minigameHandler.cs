@@ -40,7 +40,7 @@ public class minigameHandler : MonoBehaviour
         }
         if (day == 2)
         {
-            minigames[4].gameObject.SetActive(true);
+            minigames[3].gameObject.SetActive(true);
         }
         if(day == 3)
         { 
@@ -57,11 +57,19 @@ public class minigameHandler : MonoBehaviour
             dh.runMaintenance(2);
             //dh.runNode("Maintenance1");
         }
+        if(day == 2)
+        {
+            dh.runMaintenance(13);
+        }
+        if (day == 3)
+        {
+            dh.runMaintenance(17);
+        }
     }
     public void nextGame()
     {
         print("starting next day");
-        if(currentGame == 1)
+        if(currentGame == 0)//needs to be 2 or 3 in final
         {
             print("ending the day");
             currentGame++;

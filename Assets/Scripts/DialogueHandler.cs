@@ -238,8 +238,34 @@ namespace Yarn.Unity
 
         public void runMaintenance(int seg)
         {
+
             ma.activatePanel();
+            ma.maintenanceDialogue = (20 - ((6 - seg) * 4) - 4);
+            print("dhmd is " + ma.maintenanceDialogue.ToString());
             ma.segment = seg;
+            if(seg == 1)
+            {
+
+            }
+            else
+            {
+                if (seg % 2 == 1) //even segments = closing panel, odd segments = opening panel
+                {
+                    print("opening panel");
+                    ma.prepPanel("open");
+                }
+                else
+                {
+                    print("closing panel");
+                    ma.prepPanel("close");
+                }
+            }
+
+        }
+
+        public void runMaintenanceEndDay(int seg)
+        {
+
         }
         public void maintenanceScrew()
         {
