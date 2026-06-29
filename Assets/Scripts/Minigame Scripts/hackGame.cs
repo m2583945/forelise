@@ -26,6 +26,7 @@ public class hackGame : MonoBehaviour
 
     bool runType = true;
     minigameHandler mh;
+    soundEffects se;
     void Start()
     {
         mh = GameObject.Find("scriptholder").gameObject.GetComponent<minigameHandler>();
@@ -33,6 +34,8 @@ public class hackGame : MonoBehaviour
         guessText = guess.gameObject.GetComponent<TMP_InputField>().text.ToString();
         System.Random randNum = new System.Random();
         password = randNum.Next(1000, 9999).ToString();
+        se = GameObject.Find("scriptholder").gameObject.GetComponent<soundEffects>();
+        se.switchSound(2);
     }
 
     // Update is called once per frame
@@ -117,6 +120,10 @@ public class hackGame : MonoBehaviour
         if (correctNums == 4)
         {
             StartCoroutine("winGame");
+        }
+        else
+        {
+            se.switchSound(8);
         }
         guessText = "";
     }

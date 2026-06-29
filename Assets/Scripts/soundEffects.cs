@@ -9,7 +9,7 @@ public class soundEffects : MonoBehaviour
     public AudioSource voiceover;
     public AudioClip[] sounds;
     public DialogueRunner dr;
-    public AudioClip[] voiceovers; 
+    public AudioClip[] voiceovers;
     void Start()
     {
         dr.AddCommandHandler<string>("playVoice", playVoice);
@@ -30,6 +30,13 @@ public class soundEffects : MonoBehaviour
      * 4-elise walks away (ending b)
      * 5 - slap (ending b)
      * 6 - zap
+     * 7 - camera shutter 
+     * 8 - wrong input
+     * 9 - select (short)
+     * 10 - select (long)
+     * 11 - click
+     * 12 - ow!
+     * 13 - ouch!
      */
     public void switchSound(int num)
     {
@@ -62,6 +69,22 @@ public class soundEffects : MonoBehaviour
         if(sound == "hurting")
         {
             voiceover.clip = voiceovers[4];
+        }
+        if(sound == "pain1")
+        {
+            voiceover.clip = voiceovers[5];
+        }
+        if (sound == "pain4")
+        {
+            voiceover.clip = voiceovers[8];
+        }
+        if (sound == "pain5")
+        {
+            voiceover.clip = voiceovers[9];
+        }
+        if (sound == "pleasure5")
+        {
+            voiceover.clip = voiceovers[14];
         }
         voiceover.Play();
     }

@@ -2,7 +2,7 @@
 ---
 <<declare $roboName = "EL1-5e">>
 <<declare $endingAPoints = 0>>
-<<declare $endingBPoints = 2>>
+<<declare $endingBPoints = 0>>
 ===
 title: Start
 ---
@@ -65,6 +65,20 @@ VEX: . . . !
 <<jump VO1>>
 ===
 
+title: VO1
+---
+<<playVoice welcome>>
+EL1-5e: Hello. Welcome ASCO UNIT T-3, a companion to suit all your flying needs.
+<<jump VO2>>
+===
+
+title: VO2
+---
+<<playVoice mynameis>>
+EL1-5e: My name has been set to EL1-5e. Please prepare for me to awaken momentarily.
+<<jump Dialogue2postVO>>
+===
+
 title:Dialogue2postVO
 ---
 <<hideSprites sprites>>
@@ -112,24 +126,11 @@ Whatever I did, it looks like it may have worked, in a roundabout way.
 <<jump Dialogue3>>
 ===
 
-title: VO1
----
-<<playVoice welcome>>
-EL1-5e: Hello. Welcome ASCO UNIT T-3, a companion to suit all your flying needs.
-<<jump VO2>>
-===
-
-title: VO2
----
-<<playVoice mynameis>>
-EL1-5e: My name has been set to EL1-5e. Please prepare for me to awaken momentarily.
-<<jump Dialogue2postVO>>
-===
 
 title: Dialogue3
 ---
 <<showCG 2>>
-<<setVex vexNeutral>>
+<<setVex vexHappy>>
 VEX: Oh my gosh. I wasn’t expecting this. How fascinating.
 <<setRobo roboConfused>>
 EL1-5e: A-am. . . am I not to your satisfaction?
@@ -206,7 +207,7 @@ VEX: Just, you know. Scream if it hurts.
 title:testNode
 ---
 minigame test
-<<startDay 1>>
+<<startDay 2>>
 <<endDialogue end>>
 ===
 
@@ -269,7 +270,7 @@ EL1-5e, at least in the form she’s in now, is meant to be a short-term compani
 title: choice1a
 ---
 <<set $endingAPoints to 1>>
-<<pickchoice1 1>>
+<<pickChoice1 1>>
 <<setVex vexNeutral>>
 VEX: Fine, you’ve convinced me.
 VEX: Lights will be off. I’ll be gone for the next ten hours. And I’ll still need to lower your power capacitor for the night. But, you will remain powered on.
@@ -287,12 +288,13 @@ Of course she’s going to agree with it. Really no point in my asking for her p
 <<setVex vexGlasses>>
 VEX: Right. Well, see you tomorrow, EL1.
 <<jump flashback1>>
+<<endDialogue end>>
 ===
 
 title: choice1b
 ---
 <<set $endingBPoints to 1>>
-<<pickchoice1 2>>
+<<pickChoice1 2>>
 <<setVex vexGlasses>>
 VEX: Rest assured, as a seasoned engineer, you’ll be just fine. You won’t even realize you were asleep. One moment you’re here, and the next moment, it’s the morning.
 <<setRobo roboScared>>
@@ -301,8 +303,8 @@ EL1-5e: Wait, wait, wait –
 <<setRobo roboClosedEyes>>
 There we go. I’ve just saved myself a couple hundred dollars in bills.
 Even though I do feel a little bad for her. It doesn’t matter too much in the long run.
-<<endDialogue end>>
 <<jump flashback1>>
+<<endDialogue end>>
 ===
 
 title: flashback1
@@ -363,6 +365,7 @@ VEX: Oh? What of?
 EL1-5e: Hard to define in words you would understand. I saw shapes and blurs, and felt something. . . warm. Pliable. Comfortable.
 <<setVex vexThinking>>
 VEX: Comfortable, hmm?
+<<jump Dialogue6>>
 
 ===
 
@@ -405,12 +408,12 @@ VEX: Oh my god.
 VEX: That’s. . . hahaha. Ahahaha.
 <<setRobo roboBlush>>
 EL1-5e: Don’t laugh! It isn’t funny.
-<<setVex vexNeutral>>
+<<setVex vexHappy>>
 VEX: Then why are you smiling?
 VEX: What drink did he even want, anyway?
 <<setRobo roboBlush>>
 EL1-5e: A Bloody Mary with Irish cream. . .
-<<setVex vexTired>>
+<<setVex vexUnamused>>
 VEX: You can’t be serious.
 <<runMaintenance 3>>
 ===
@@ -439,6 +442,7 @@ EL1-5e: So, if not for my original purpose, to what end am I being set to. . . ?
 
 title: Maintenance8
 ---
+<<setVex vexGlasses>>
 VEX: And how do you figure that I’m not working with ASCO?
 <<jump Dialogue7>>
 ===
@@ -480,16 +484,16 @@ title: Maintenance11
 EL1-5e: VEX, you did not answer my question this morning.
 VEX: Mm-hmm.
 EL1-5e: For what purpose did you bring me back, exactly?
-<<endDialogue end>>
-===
-
-title: Maintenance12
----
 VEX: Don’t worry about such things. Just focus on telling me if something hurts.
 EL1-5e: . . . . . . .
 <<playVoice hurting>>
 EL1-5e: I am hurting, VEX.
 VEX: . . .
+<<endDialogue end>>
+===
+
+title: Maintenance12
+---
 VEX: Calibration complete.
 <<jump Dialogue8>>
 ===
@@ -643,13 +647,15 @@ VEX: Listen. It’s time that I head out for the night, EL1-5e. We will discuss 
 <<setRobo roboScared>>
 EL1-5e: . . . please, power me off for the night, VEX.
 EL1-5e: I would prefer to dream tonight than to remain in my own thoughts.
-<<endDialogue end>>
+<<handleFade 0>>
 <<jump flashback2>>
+<<endDialogue end>>
 ===
 
 title: flashback2
 ---
 <<hideSprites sprites>>
+<<handleFade 1>>
 <<showCG 6>>
 Years passed, and ELISE and I fell out of contact.
 She continued her orchestral legacy, becoming one of the most prolific violinists in the nation.
@@ -679,11 +685,14 @@ I’m the only person who can care for ELISE in a way that matters.
 <<showCG 8>>
 VEX: I’ll never leave you, ELISE.
 VEX: You may not understand it now, but I hope you will the next time you see me, no matter what form you’re in.
+<<handleFade 0>>
+<<jump Dialogue10>>
 <<endDialogue end>>
 ===
 
 title: Dialogue10
 ---
+
 <<showCG 0>>
 <<setVex vexTired>>
 VEX: . . . Recording: Day 223. I’ve been making significant jumps in progress in the time since I last spoke with EL1-5e.
@@ -696,12 +705,14 @@ VEX: I will need to power EL1-5e on in order to ensure that the mind-body connec
 VEX: Afterwards, I will need to upload ELISE’s memories. . .
 VEX: . . . which will override any memories and personality currently in the T-3 unit.
 VEX: If all goes well, then. . . then I may get to speak with ELISE, by the end of the day, today.
+<<setVex vexHappy>>
 VEX: I feel so ecstatic that I must concentrate to keep my hands from shaking.
 <<setVex vexGlasses>>
 VEX: But at the same time, I am. . . 
 VEX: Terrified of the outcome.
 VEX: . . . . . . . . .
 VEX: I’ve got to power on EL1-5e.
+<<setVex vexHappy>>
 VEX: Good morning, EL1-5e.
 <<setRobo roboScared>>
 EL1-5e:. . . . . Good morning.
@@ -711,7 +722,7 @@ EL1-5e: Am I. . . still needed, at this point in time?
 VEX: Yes, EL1. You are still ‘alive.’ I’m going to need you awake for today.
 <<setRobo roboNeutral>>
 EL1-5e: Why?
-<<setVex vexNeutral>>
+<<setVex vexHappy>>
 VEX:I’m going to need feedback from a live specimen. Not to worry, EL1. If all goes well, you won’t remember any of this by the end of the day.
 <<setRobo roboScared>>
 EL1-5e: Are. . . you going to erase my memories?
@@ -728,7 +739,7 @@ But I must.
 I have no other choice.
 <<setVex vexGlasses>>
 VEX: Right. Shall we get started?
-
+<<runMaintenance 5>>
 ===
 
 title:Maintenance13
@@ -748,6 +759,7 @@ title: Maintenance14
 EL1-5e: VEX. May I ask a question?
 EL1-5e: How close are you with ELISE?
 VEX: Ah. That’s. . . 
+<<playSound 12>>
 EL1-5e: Ow.
 VEX: Apologies.
 VEX: We used to be much closer when we were younger.
@@ -759,23 +771,27 @@ title: Maintenance15
 VEX: Now, it’s complicated, to say the least.
 EL1-5e: Is she not happy that you are trying to help her?
 VEX: No she. . . she has a different mindset.
+<<playSound 13>>
 EL1-5e: Ouch!
 VEX: Sorry. I’m getting distracted.
 VEX: She, um. . . she doesn’t understand the beauty in a continued legacy.
 VEX: Instead she worships the temporary nature of the frail human body.
 VEX: Which is something I hate.
+VEX: I don’t hate her, of course. But I hate that she doesn’t understand how good she has it.
+VEX: How good it is that she has me.
+VEX: Myself, who is willing to throw away everything to save her life.
 <<endDialogue end>>
 ===
 
 title: Maintenance16
 ---
-VEX: I don’t hate her, of course. But I hate that she doesn’t understand how good she has it.
-VEX: How good it is that she has me.
-VEX: Myself, who is willing to throw away everything to save her life.
+<<showCG 12>>
 VEX: I can’t stand it.
 VEX: . . . Sorry, you’re in pain, aren’t you, EL1? 
 VEX: Talking about these things tends to tighten my grip unintentionally. My apologies. Hahaha.
 VEX: Calibration complete.
+<<startDay 3>>
+<<hideCG 12>>
 <<endDialogue end>>
 ===
 
@@ -808,11 +824,12 @@ EL1-5e: And while it is also the reason I have been brought here, and met you. .
 
 title: Maintenance20
 ---
+<<showCG 12>>
 EL1-5e: . . . it is also the reason for my downfall.
 VEX: . . . . .
 VEX: Calibration complete.
-<<endDialogue end>>
 <<jump Dialogue11>>
+
 ===
 
 title: Dialogue11
@@ -896,7 +913,7 @@ VEX: . . . What is it?
 <<setRobo roboNeutral>>
 EL1-5e: In an effort to separate myself from her, I ask that you call me by a name that I choose.
 <<setVex vexConfused>>
-VEX: (confused) What does it matter? You won’t be around for much longer.
+VEX: What does it matter? You won’t be around for much longer.
 <<setRobo roboNeutral>>
 EL1-5e: Just as ELISE has her legacy in violin, and yours in robotics. . .
 EL1-5e: In lieu of personhood, I would like the privilege of identity.
@@ -920,6 +937,7 @@ Do robots pray, I wonder?
 VEX: Fine.
 VEX: It shall be done. I will replace every record of the name EL1-5e in my documentation with the name TERESE.
 VEX: For being such a wonderful subject and companion, well. . .
+<<setVex vexHappy>>
 VEX: That much I owe you.
 <<hideSprites sprites>>
 TERESE’s eyes open with relief, the stiffness draining from her shoulders all at once.

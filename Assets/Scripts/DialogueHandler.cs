@@ -52,6 +52,7 @@ namespace Yarn.Unity
             dr.AddCommandHandler<int>("runMaintenance", runMaintenance);
             dr.AddCommandHandler<int>("playSound", playSound);
             dr.AddCommandHandler<int>("showCG", showCG);
+            dr.AddCommandHandler<int>("hideCG", hideCG);
             dr.AddCommandHandler<int>("pickChoice1", pickChoice1);
             dr.AddCommandHandler<int>("choice1", choice1);
             dr.AddCommandHandler<int>("handleFade", handleFade);
@@ -87,6 +88,11 @@ namespace Yarn.Unity
              */
             cgbackground.gameObject.SetActive(true);
             cgbackground.gameObject.GetComponent<Image>().sprite = cgImages[num];   
+        }
+
+        public void hideCG(int num)
+        {
+            cgbackground.gameObject.SetActive(false);
         }
 
         public void testFunction()
@@ -189,6 +195,14 @@ namespace Yarn.Unity
             {
                 portrait.gameObject.GetComponent<Image>().sprite = vex[5];
             }
+            if (spriteName == "vexUnamused")
+            {
+                portrait.gameObject.GetComponent<Image>().sprite = vex[6];
+            }
+            if (spriteName == "vexHappy")
+            {
+                portrait.gameObject.GetComponent<Image>().sprite = vex[7];
+            }
             //portrait.gameObject.GetComponent<Image>().SetNativeSize();
         }
 
@@ -240,24 +254,46 @@ namespace Yarn.Unity
         {
 
             ma.activatePanel();
-            ma.maintenanceDialogue = (20 - ((6 - seg) * 4) - 4);
+            //ma.maintenanceDialogue = (20 - ((6 - seg) * 4)) - 3;
+
             print("dhmd is " + ma.maintenanceDialogue.ToString());
             ma.segment = seg;
             if(seg == 1)
             {
-
+                //return;
             }
             else
             {
-                if (seg % 2 == 1) //even segments = closing panel, odd segments = opening panel
+                if (seg % 2 == 1) //odd segments = closing panel, even segments = opening panel
                 {
                     print("opening panel");
                     ma.prepPanel("open");
+                    if(seg == 3)
+                    {
+                        ma.maintenanceDialogue = 4;
+                    }
+                    if (seg == 5)
+                    {
+                        ma.maintenanceDialogue = 12;
+                    }
+
                 }
                 else
                 {
                     print("closing panel");
                     ma.prepPanel("close");
+                    if (seg == 2)
+                    {
+                        ma.maintenanceDialogue = 0;
+                    }
+                    if (seg == 4)
+                    {
+                        ma.maintenanceDialogue = 8;
+                    }
+                    if (seg == 6)
+                    {
+                        ma.maintenanceDialogue = 16;
+                    }
                 }
             }
 

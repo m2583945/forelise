@@ -25,7 +25,7 @@ public class MemoryScramble : MonoBehaviour
     public Button continueButton;
     int pairs;
     minigameHandler mh;
-
+    soundEffects se;
 
     void Start()
     {
@@ -33,6 +33,7 @@ public class MemoryScramble : MonoBehaviour
         //cardListLength = cardList1.Length;
         clicks = 0;
         fillCardNums(cardNumberConverter);
+        se = GameObject.Find("scriptholder").gameObject.GetComponent<soundEffects>();
     }
 
     // Update is called once per frame
@@ -75,6 +76,7 @@ public class MemoryScramble : MonoBehaviour
 
     public void setCardValue(int num)
     {
+        se.switchSound(11);
         if(clicks == 0)
         {
             cardSprite1 = cardNumberConverter[num];
@@ -116,7 +118,8 @@ public class MemoryScramble : MonoBehaviour
             {
                 if (cardSprite1 == cardSprite2)
                 {
-                    print("found a match");
+                    //print("found a match");
+                    se.switchSound(10);
                     pairs++;
                     card1.gameObject.GetComponent<Button>().interactable = false;
                     card2.gameObject.GetComponent<Button>().interactable = false;
@@ -143,14 +146,23 @@ public class MemoryScramble : MonoBehaviour
 
     IEnumerator ResetCards()
     {
-        yield return new WaitForSeconds(1f);
+        for(int i = 0; i < cards.Length; i++)
+        {
+            cards[i].interactable = false;
+        }
+        yield return new WaitForSeconds(0.5f);
         //print("not a match");
+        se.switchSound(8);
         clicks = 0;
         card1.GetComponent<Image>().sprite = cardBack;
         card2.GetComponent<Image>().sprite = cardBack;
         cardSprite1 = -1;
         cardSprite2 = -1;
-        
+        for (int i = 0; i < cards.Length; i++)
+        {
+            cards[i].interactable = true;
+        }
+
     }
 
 

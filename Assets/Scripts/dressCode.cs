@@ -20,9 +20,14 @@ public class dressCode : MonoBehaviour
     public int currentHairNum;
     public int currentDressNum;
     public int currentPropNum;
+
+    minigameHandler mh;
+    soundEffects se;
     void Start()
     {
-        
+        mh = GameObject.Find("scriptholder").gameObject.GetComponent<minigameHandler>();
+        se = GameObject.Find("scriptholder").gameObject.GetComponent<soundEffects>();
+        mh.currentGame = 3;
     }
 
     // Update is called once per frame
@@ -99,18 +104,52 @@ public class dressCode : MonoBehaviour
     }
     public void changeHair()
     {
+        se.switchSound(11);
         print("current hair num is " + currentHairNum);
         hair.gameObject.GetComponent<Image>().sprite = hairArray[currentHairNum];
         hair.gameObject.GetComponent<Image>().SetNativeSize();
     }
     public void changeDress()
     {
+        se.switchSound(11);
         dress.gameObject.GetComponent<Image>().sprite = dressArray[currentDressNum];
         dress.gameObject.GetComponent<Image>().SetNativeSize();
     }
     public void changeProp()
     {
+        se.switchSound(11);
         prop.gameObject.GetComponent<Image>().sprite = propArray[currentPropNum];
         prop.gameObject.GetComponent<Image>().SetNativeSize();
+    }
+
+    public void submit()
+    {
+
+        se.switchSound(7);
+        StartCoroutine("wait1sec");
+
+        
+    }
+
+    IEnumerator wait1sec()
+    {
+        yield return new WaitForSeconds(1.5f);
+        if(currentDressNum == 0 && currentPropNum == 0 && currentHairNum == 0)
+        {
+            se.playVoice("pleasure5"); //flight attendant outfit - "i feel nice"
+        }
+        else
+        {
+            if(currentPropNum == 2 && currentHairNum == 1 && currentDressNum == 3)
+            {
+                se.playVoice("pain5"); // elise outfit - "i don't feel well"
+            }
+            else
+            {
+                se.playVoice("pain4"); //any other combo - "i don't know about this"
+            }
+        }
+        yield return new WaitForSeconds(se.voiceover.clip.length);
+        mh.nextGame();
     }
 }

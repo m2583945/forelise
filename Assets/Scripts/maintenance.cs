@@ -54,6 +54,10 @@ public class maintenance : MonoBehaviour
             {
                 screws[i].gameObject.GetComponent<Button>().interactable = true;
             }
+            else
+            {
+                screws[i].gameObject.GetComponent<Button>().interactable = false;   
+            }
             
         }
     }
@@ -84,6 +88,10 @@ public class maintenance : MonoBehaviour
     }
     public void rotateScrew(int num) //play the maintenance segments. screws come off after 2 clicks each, which sometimes also triggers dialogue. after 4 screws, move to the next dialogue segment
     {
+        if (clicks[num] >= 3)
+        {
+            return;
+        }
         GameObject screw = screws[num]; 
         clicks[num]++;
         string maintenanceString = "Dialogue";
@@ -140,7 +148,7 @@ public class maintenance : MonoBehaviour
             }
             else
             {
-                screw.transform.rotation = transform.rotation *= Quaternion.Euler(0, 0, -35);
+                screw.transform.rotation = transform.rotation *= Quaternion.Euler(0, 0, -120);
                 print("working to close panel");
                 if (clicks[num] > 2)
                 {
