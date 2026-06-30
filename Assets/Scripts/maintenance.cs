@@ -155,7 +155,7 @@ public class maintenance : MonoBehaviour
 
                     screwsDone++;
                     maintenanceDialogue++;
-                    se.switchSound(1);
+                    se.switchSound(14);
                     screws[num].gameObject.GetComponent<Button>().interactable = false;
                     maintenanceString = "Maintenance" + maintenanceDialogue.ToString();
                     dh.StartDialogue(maintenanceString, "");

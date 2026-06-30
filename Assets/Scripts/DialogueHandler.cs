@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Device;
 using UnityEngine.UI;
 using Yarn;
+using Yarn.Saliency;
 using static Unity.Collections.AllocatorManager;
 
 namespace Yarn.Unity
@@ -14,6 +15,7 @@ namespace Yarn.Unity
         bool lockVisited;
         public DialogueRunner dr;
         public GameObject dialogueSystem;
+        public GameObject endScreen;
         public List<GameObject> disabledDuringDialogue;
         private bool isDialogueActive;
         public bool allowClicks = true;
@@ -208,6 +210,10 @@ namespace Yarn.Unity
 
         public void handleFade(int value)
         {
+            if(!blackScreen.gameObject.activeSelf)
+            {
+                blackScreen.gameObject.SetActive(true);
+            }
             Animator bsa = blackScreen.GetComponent<Animator>();
             bsa.speed = 1;
             if (value == 0) // fade to black
@@ -225,11 +231,28 @@ namespace Yarn.Unity
                 bsa.speed = 0.5f;
                 bsa.Play("fadetoblack");
             }
+            if(value == 3) //fade to black and show end screen
+            {
+                bsa.speed = 0.5f;
+                bsa.Play("fadetoblack");
+                StartCoroutine("showEndScreen");
+
+            }
             else
             {
                 bsa.Play("fadefromblack");
             }
             StartCoroutine("wait1sec");
+        }
+
+        
+
+        public IEnumerator showEndScreen()
+        {
+            yield return new WaitForSeconds(2f);
+            hideCG(12);
+            endScreen.gameObject.SetActive(true);
+            blackScreen.gameObject.SetActive(false);
         }
 
         public IEnumerator wait1sec()

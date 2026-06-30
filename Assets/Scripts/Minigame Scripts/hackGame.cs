@@ -25,6 +25,7 @@ public class hackGame : MonoBehaviour
     float timePerChar = 0.05f;
 
     bool runType = true;
+    bool firstTime = true;
     minigameHandler mh;
     soundEffects se;
     void Start()
@@ -120,17 +121,32 @@ public class hackGame : MonoBehaviour
         if (correctNums == 4)
         {
             StartCoroutine("winGame");
+            return;
         }
         else
         {
-            se.switchSound(8);
+            if(firstTime == true)
+            {
+                //print("so true");
+                firstTime = false;
+                se.painSound();
+            }
+            else
+            {
+                se.switchSound(8);
+                se.randomPainSound(); //upon losing, play "wrong input" noise & give el1 a 1/4 chance to make a random noise of pain
+            }
+
         }
         guessText = "";
     }
 
+    
+
     IEnumerator winGame()
     {
-        yield return new WaitForSeconds(1f);
+        se.playVoice("ifeelweird");
+        yield return new WaitForSeconds(se.voiceover.clip.length);
         //print("not a match");
         mh.nextGame();
 

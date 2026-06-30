@@ -49,7 +49,9 @@ VEX: All I need is to do is power the unit on to make sure its body works. It do
 VEX: God, I miss talking to people. I wish I could have a conversation with someone. With anyone.
 VEX: I keep telling myself to keep it together. That I will succeed and it’s only a matter of time before I can get its systems up and running.
 VEX: And only after I get its systems on can I hope to speak with her again.
+<<setVex vexThinking>>
 VEX: T-3. Unit T-3. Why have I never seen this model before? Why can I hardly find any information about it online?
+<<setVex vexConfused>>
 VEX: Sigh. I suppose there are still routing combinations with its internal circuitry I haven’t tried, yet.
 <<runMaintenance 1>>
 <<endDialogue end>>
@@ -57,7 +59,7 @@ VEX: Sigh. I suppose there are still routing combinations with its internal circ
 
 title:Dialogue2
 ---
-<<setVex vexNeutral>>
+<<setVex vexConfused>>
 VEX: Okay. It’s a long shot, but–
 <<setVex vexSurprised>>
 VEX: . . . !
@@ -94,7 +96,7 @@ VEX: Why do you sound like that?
 VEX: Do you know who you are?
 <<setRobo roboSurprised>>
 EL1-5e: I-I am EL1-5e–
-<<setVex vexNeutral>>
+<<setVex vexConfused>>
 VEX: No, no! I mean. . . do you know who I am?
 <<setRobo roboNeutral>>
 EL1-5e: I. . . I do not believe I have seen you before, no.
@@ -107,11 +109,11 @@ EL1-5e: Excuse me. Where am I?
 I scramble through the files on my computer in a flurry of clicks. This is definitely further than I’ve gotten, but not exactly what I was aiming for.
 <<setRobo roboConfused>>
 EL1-5e: Who are you?
-<<setVex VexGlasses>>
+<<setVex vexThinking>>
 VEX: Why is it speaking to me right now? And how?
 <<setRobo roboConfused>>
 EL1-5e: . . . Am I even alive?
-<<setVex VexGlasses>>
+<<setVex vexGlasses>>
 VEX: I can’t work with all this noise. Need to figure out how to power it off–
 <<setRobo roboScared>>
 EL1-5e: PLEASE!
@@ -134,7 +136,7 @@ title: Dialogue3
 VEX: Oh my gosh. I wasn’t expecting this. How fascinating.
 <<setRobo roboConfused>>
 EL1-5e: A-am. . . am I not to your satisfaction?
-<<setVex vexGlasses>>
+<<setVex vexThinking>>
 VEX: Hmm. That depends on whether you can help me out or not.
 <<setRobo roboBlush>>
 EL1-5e: W-why, yes. Allow me to answer your questions.
@@ -147,7 +149,7 @@ EL1-5e: And afraid.
 <<hideSprites sprites>>
 Oh. Not only can it speak and emote, it can also understand me and retain a shocking amount of memory. This is a massive upgrade from the last I’d seen of ASCO’s robotics department.
 I haven't been able to ride a plane for the last ten years. So, no wonder I’ve never seen one of these units before.
-<<setVex vexThinking>>
+<<setVex vexNeutral>>
 VEX: Okay. Thanks for answering my earlier questions. Let me see if I can help you out in return.
 <<setVex vexNeutral>>
 VEX: This is my lab.
@@ -158,9 +160,8 @@ EL1-5e looks contemplatively around at her surroundings, down at the state of he
 <<setRobo roboConfused>>
 EL1-5e: What happened? I would assume I am under maintenance, but I am not usually in a. . .
 EL1-5e: . . . place like this.
-<<setVex vexTired>>
+<<setVex vexUnamused>>
 VEX: Okay, I get it. My lab isn’t exactly the 5-star ASCO maintenance shops you’re probably used to. But this is my home, and this is what I’ve got to work with.
-<<setVex vexNeutral>>
 VEX: Feel free to leave a rating on YELL. Hehe.
 <<setRobo roboConfused>>
 EL1-5e: Ah. . .
@@ -177,12 +178,15 @@ EL1-5e: . . . I do.
 VEX: 71 days ago, I found you in an ASCO scrapyard.
 VEX: There were a lot of your kind there. Some whole, some not, and almost all of them unusable.
 VEX: But the moment I saw you, I knew you had to be the one.
+<<setVex vexThinking>>
 VEX: I’ve been fixing you up since, all by my lonesome. 71 days is a long time to be working on something with no success, as you might know, so I was very close to giving up.
+<<setVex vexNeutral>>
 VEX: I’m so glad that you’ve woken up now.
 <<setRobo roboNeutral>>
 EL1-5e: . . . So that means you’ve saved me.
-<<setVex vexThinking>>
+<<setVex vexHappy>>
 VEX: Hmm. In a way, yes!
+<<setVex vexNeutral>>
 VEX: But you’re still a long way from being good-as-new. So if you don’t mind, I’m going to power you down so I can keep working on you, now.
 <<setRobo roboScared>>
 EL1-5e: NO!
@@ -244,7 +248,7 @@ EL1-5e: If I may ask. . . why have you brought me here?
 VEX:All that’s left is to log my progress for the day. So much to write down. I’ll need to make sure my backup servers are still in order. Not to mention. . .
 <<setRobo roboNeutral>>
 EL1-5e: I sense you are busy. . .
-<<setVex vexThinking>>
+<<setVex vexNeutral>>
 VEX: Ah, and I’ll need to power you off for the night. I’m the sole owner of this laboratory, so, you know. . . that also means I’m paying for the electricity here on my own.
 <<setRobo roboNeutral>>
 EL1-5e: I-I’m sorry. . .
@@ -271,7 +275,7 @@ title: choice1a
 ---
 <<set $endingAPoints to 1>>
 <<pickChoice1 1>>
-<<setVex vexNeutral>>
+<<setVex vexTired>>
 VEX: Fine, you’ve convinced me.
 VEX: Lights will be off. I’ll be gone for the next ten hours. And I’ll still need to lower your power capacitor for the night. But, you will remain powered on.
 <<setRobo roboHappy>>
@@ -285,7 +289,7 @@ VEX: That’s a little bit of a mouthful now that I’m speaking in a conversati
 EL1-5e: That is a perfectly suitable name for me. Whatever you wish, VEX.
 <<hideSprites sprites>>
 Of course she’s going to agree with it. Really no point in my asking for her permission.
-<<setVex vexGlasses>>
+<<setVex vexThinking>>
 VEX: Right. Well, see you tomorrow, EL1.
 <<jump flashback1>>
 <<endDialogue end>>
@@ -371,17 +375,22 @@ VEX: Comfortable, hmm?
 
 title: choice2b
 ---
+<<setVex vexUnamused>>
 VEX: So? How was your sleep?
+<<setRobo roboConfused>>
 EL1-5e: Troublesome. I may have dreamed last night.
+<<setVex vexSurprised>>
 VEX: Oh? What of?
+<<setRobo roboScared>>
 EL1-5e: Something dark. Something all-encompassing, and inevitable. It’s hard to describe. I felt. . . fear.
+<<setVex vexUnamused>>
 VEX: We all have nightmares from time to time. 
 <<jump Dialogue6>>
 ===
 
 title: Dialogue6
 ---
-<<setVex vexNeutral>>
+<<setVex vexGlasses>>
 VEX: Alright, it’s time for daily calibration. You know the drill. Please remain still, and let me know if...
 <<setRobo roboNeutral>>
 EL1-5e: If I feel discomfort, I know. You could never make me feel uncomfortable, VEX.
@@ -390,13 +399,13 @@ VEX: But you do feel discomfort from time to time, yes?
 <<setRobo roboScared>>
 EL1-5e: I do.
 EL1-5e: I once had a passenger on a flight attempt to grab me by the waist to get my attention.
-<<setVex vexThinking>>
+<<setVex vexSurprised>>
 VEX: Oh, no? How did that end?
 <<setRobo roboNeutral>>
 EL1-5e: Well, my protocol was programmed to respond very strictly to any act of violence during flights.
 <<setRobo roboBlush>>
 EL1-5e: I turned around and. . . oh, it’s embarrassing to recall. I feel my internal systems warming up even trying to speak of it.
-<<setVex vexNeutral>>
+<<setVex vexHappy>>
 VEX: I can tell. Ehe, please, I’m intrigued.
 <<setRobo roboBlush>>
 EL1-5e: Well. . .
@@ -405,11 +414,13 @@ EL1-5e: It turned out that all he was holding was an empty cup of ice, and he ju
 EL1-5e: My supervisors were very angry with me. As were his lawyers with the flight company, and with ASCO.
 <<setVex vexSurprised>>
 VEX: Oh my god.
+<<setVex vexHappy>>
 VEX: That’s. . . hahaha. Ahahaha.
 <<setRobo roboBlush>>
 EL1-5e: Don’t laugh! It isn’t funny.
 <<setVex vexHappy>>
 VEX: Then why are you smiling?
+<<setVex vexNeutral>>
 VEX: What drink did he even want, anyway?
 <<setRobo roboBlush>>
 EL1-5e: A Bloody Mary with Irish cream. . .
@@ -452,7 +463,7 @@ title: Dialogue7
 <<showCG 0>>
 <<setRobo roboNeutral>>
 EL1-5e: I assume it from the way you speak.
-<<setVex vexNeutral>>
+<<setVex vexUnamused>>
 VEX: Oh, I suppose ASCO’s engineers speak a little more smarty-pants than I do, hmm?
 <<setRobo roboBlush>>
 EL1-5e: Ehehehe. . . not exactly.
@@ -509,11 +520,10 @@ VEX: Hm?
 EL1-5e: You told me yourself.
 EL1-5e: I was found in an ASCO scrapyard.
 EL1-5e: That surely means that something was wrong with me to warrant being retired.
-<<setVex vexConfused>>
-VEX: Well, you were also hardly more than your head and spinal cord when I first found you.
-<<setVex vexNeutral>>
-VEX: More than likely, you experienced hardware malfunction and ASCO found it more trouble than it was worth to keep you.
 <<setVex vexThinking>>
+VEX: Well, you were also hardly more than your head and spinal cord when I first found you.
+<<setVex vexGlasses>>
+VEX: More than likely, you experienced hardware malfunction and ASCO found it more trouble than it was worth to keep you.
 VEX: I couldn’t find much information about your unit’s operating manual online. I almost wonder if T-3 units were discontinued, for whatever reason. . .
 <<setRobo roboClosedEyes>>
 EL1-5e:  . . .
@@ -521,7 +531,7 @@ EL1-5e: No, I fear it may be something more than that. Something deeper.
 <<setRobo roboNeutral>>
 EL1-5e: It was commonplace for T-3 units to be sent back to a manufacturing facility for reprogramming to resolve any mistakes made.
 EL1-5e: Things like pathing glitches. Sub-optimal luggage placement. Conversations with passengers turned sour.
-<<setVex vexGlasses>>
+<<setVex vexUnamused>>
 VEX: Or accidentally breaking a passenger’s wrist.
 <<setRobo roboNeutral>>
 EL1-5e: Yes, and accidental violence.
@@ -545,7 +555,7 @@ VEX: ...
 <<hideSprites sprites>>
 I wish I was recording any of this.
 The uptick in artificial intelligence technology from ASCO is. . . astounding.
-<<setVex vexThinking>>
+<<setVex vexHappy>>
 VEX: You’re a marvel, EL1-5e.
 <<setRobo roboScared>>
 EL1-5e: You keep saying that, but how do I know you won’t scrap me, too?
@@ -557,8 +567,9 @@ EL1-5e moves forward and locks her arms around my back in a surprising display o
 I haven’t been embraced or touched like this since. . .
 What is happening to me?
 <<showCG 0>>
-<<setVex vexTired>>
+<<setVex vexNeutral>>
 VEX: Oh, EL1-5e. . .
+<<setVex vexGlasses>>
 VEX: Are you sure you want to know the truth?
 <<setRobo roboNeutral>>
 EL1-5e: More sure than I’ve been of anything else in the world.
@@ -571,13 +582,13 @@ EL1-5e: More sure than I’ve been of anything else in the world.
 title: choice3a
 ---
 <<set $endingAPoints to $endingAPoints + 1>>
-<<setVex vexGlasses>>
+<<setVex vexThinking>>
 VEX: You deserve to know the truth of why I’ve brought you here, EL1-5e.
 VEX: I brought you into my laboratory in an attempt to. . . solve another project, unrelated to you.
 <<setRobo roboScared>>
 EL1-5e: I knew it.
 EL1-5e: You never wanted me around.
-<<setVex vexNeutral>>
+<<setVex vexSurprised>>
 VEX: Please don’t say it like that. 
 <<jump Dialogue9>>
 ===
@@ -585,8 +596,9 @@ VEX: Please don’t say it like that.
 title: choice3b
 ---
 <<set $endingBPoints to $endingBPoints + 1>>
-<<setVex vexGlasses>>
+<<setVex vexTired>>
 VEX: Please don’t feel the need to worry about this.
+<<setVex vexUnamused>>
 VEX: I know you have been burned in the past. Trust that I am not like them.
 <<setRobo roboBlackEyes>>
 EL1-5e: . . .
@@ -610,39 +622,41 @@ VEX: How do you know about her?
 EL1-5e: I have flown with quite a few passengers on their ways to see her performances.
 EL1-5e: The last I had heard of her, she had been forced to retire early due to a medical condition.
 EL1-5e: You’re trying to save her, aren’t you?
-<<setVex vexNeutral>>
+<<setVex vexGlasses>>
 VEX: . . . Indeed, I am.
 <<setRobo roboSurprised>>
 EL1-5e: But it is illegal to extract and upload human minds outside of their bodies. 
-<<setVex vexNeutral>>
+<<setVex vexUnamused>>
 VEX: Why do you think I’m here all alone?
 VEX: Why do you think I work so hard, day in and day out?
 <<setVex vexGlasses>>
 VEX: I have a loved one to save, consequences be damned.
 VEX: To be honest, I never intended to meet you in this way. In fact, I never knew that your personality and memories were still intact when I first collected you up.
 VEX: Nor that your sentience could even be this advanced.
-<<setVex vexNeutral>>
+<<setVex vexThinking>>
 VEX: Suppose that’s how it is when you’re forced to flee from the government for conducting unethical scientific research.
+<<setVex vexGlasses>>
 VEX: You tend to miss what goes on in the world.
 <<setRobo roboScared>>
 EL1-5e: . . . . . . . . . . .
 EL1-5e: So, you had always planned to fix my body in order to eventually house ELISE’s consciousness.
 EL1-5e: But you didn’t realize that. . . that I would still be “in here.”
-<<setVex vexNeutral>>
+<<setVex vexHappy>>
 VEX: I’m happy that I’ve met you, EL1-5e. You’ve been wonderful company for me these last few months.
 <<setRobo roboScared>>
 EL1-5e: Will I even. . . still be around? Will I still be "me"?
-<<setVex vexGlasses>>
+<<setVex vexNeutral>>
 VEX: . . . . . . .
 VEX: I’m afraid that your unit does not contain enough storage for “you,” no. 
 <<setRobo roboScared>>
 EL1-5e: What is your relationship to ELISE, VEX?
-<<setVex vexNeutral>>
+<<setVex vexThinking>>
 VEX: You don’t need to know that.
 <<setRobo roboWhiteEyes>>
 EL1-5e: None of it matters if I’m just going to be used as her replacement in the end, does it?
-<<setVex vexNeutral>>
+<<setVex vexConfused>>
 VEX: Please don’t think of it that way.
+<<setVex vexNeutral>>
 VEX: Listen. It’s time that I head out for the night, EL1-5e. We will discuss more on the topic later.
 <<setRobo roboScared>>
 EL1-5e: . . . please, power me off for the night, VEX.
@@ -685,24 +699,24 @@ I’m the only person who can care for ELISE in a way that matters.
 <<showCG 8>>
 VEX: I’ll never leave you, ELISE.
 VEX: You may not understand it now, but I hope you will the next time you see me, no matter what form you’re in.
-<<handleFade 0>>
 <<jump Dialogue10>>
 <<endDialogue end>>
 ===
 
 title: Dialogue10
 ---
-
+<<handleFade 1>>
 <<showCG 0>>
 <<setVex vexTired>>
 VEX: . . . Recording: Day 223. I’ve been making significant jumps in progress in the time since I last spoke with EL1-5e.
 VEX: I haven’t needed to power her on for quite some time. An awake mind is not necessary for the upgrades I’ve been doing.
 VEX: . . . But today is different. Today marks whether I’ve succeeded in my career, in my life. . .
-<<setVex vexGlasses>>
+<<setVex vexThinking>>
 VEX: . . . or failed.
 <<setVex vexNeutral>>
 VEX: I will need to power EL1-5e on in order to ensure that the mind-body connection is still intact.
 VEX: Afterwards, I will need to upload ELISE’s memories. . .
+<<setVex vexThinking>>
 VEX: . . . which will override any memories and personality currently in the T-3 unit.
 VEX: If all goes well, then. . . then I may get to speak with ELISE, by the end of the day, today.
 <<setVex vexHappy>>
@@ -718,7 +732,7 @@ VEX: Good morning, EL1-5e.
 EL1-5e:. . . . . Good morning.
 <<setRobo roboSuprised>>
 EL1-5e: Am I. . . still needed, at this point in time?
-<<setVex vexNeutral>>
+<<setVex vexHappy>>
 VEX: Yes, EL1. You are still ‘alive.’ I’m going to need you awake for today.
 <<setRobo roboNeutral>>
 EL1-5e: Why?
@@ -726,7 +740,7 @@ EL1-5e: Why?
 VEX:I’m going to need feedback from a live specimen. Not to worry, EL1. If all goes well, you won’t remember any of this by the end of the day.
 <<setRobo roboScared>>
 EL1-5e: Are. . . you going to erase my memories?
-<<setVex vexThinking>>
+<<setVex vexConfused>>
 VEX: Well, there will be no memories to erase, so to speak.
 <<hideSprites sprites>>
 EL1 fights against the constraints of the holding skeleton I’ve got her attached to. There’s so much more movement in her shoulders; more harmony in the swell of her body as her hips jut out in an attempt to find space to move.
@@ -847,8 +861,9 @@ EL1-5e: So this is ELISE?
 I bring ELISE’s organic, fleshy body next to the jungle of inorganic machinery and code that makes up the station which I have made my home the last 223 days.
 I almost fear what will happen when I connect the neuro-wires to her head.
 But I have no choice. I brush a lock of overgrown hair off her forehead.
-<<setVex vexNeutral>>
+<<setVex vexThinking>>
 VEX: Yes.
+<<setVex vexNeutral>>
 VEX: And she is the. . . the only person I have ever loved.
 <<hideSprites sprites>>
 EL1-5e’s limbs go stiff. She should be strong enough now to move completely independently – a design I ensured so that ELISE would be able to move freely the second she opens her eyes. But the holding skeleton keeps EL1-5e in place.
@@ -860,7 +875,7 @@ I gently attach the transfer wires onto ELISE’s forehead. I thread the synchro
 VEX: Ask away.
 <<setRobo roboNeutral>>
 EL1-5e: Does ELISE want to be brought back?
-<<setVex vexNeutral>>
+<<setVex vexUnamused>>
 VEX: . . . . .
 VEX: Why do you ask?
 <<setRobo roboEyesClosed>>
@@ -875,7 +890,7 @@ EL1-5e: . . . There is something about ELISE that I cannot seem to wrap my head 
 EL1-5e: You say she will not be happy when she wakes up.
 <<hideSprites sprites>>
 I triple-check that the connections to ELISE and EL1-5e’s neurons are secure. I access the program on my station that initiates the transfer. It will take a few minutes to open.
-<<setVex vexGlasses>>
+<<setVex vexThinking>>
 VEX: Why does that matter to you?
 <<setRobo roboNeutral>>
 EL1-5e: I just cannot understand why one would devalue the life which they have been given.
@@ -894,6 +909,7 @@ EL1-5e: Me, who wishes for nothing more than to break free of these chains and t
 EL1-5e: Such as the one you seem to be making for EL1-5e.
 <<setVex vexNeutral>>
 VEX: . . . . .
+<<setVex vexConfused>>
 VEX: I thought T-3 Units were programmed not to disobey their masters.
 <<setRobo roboEyesClosed>>
 EL1-5e: Indeed we aren’t.
@@ -908,7 +924,7 @@ EL1-5e: All I wish is for you to look not at her, but at me.
 The transfer program has opened on my computer. All that’s left is to initiate it.
 <<setRobo roboNeutral>>
 EL1-5e: Even if you do not change your mind, I have one last request for you.
-<<setVex vexSuprised>>
+<<setVex vexConfused>>
 VEX: . . . What is it?
 <<setRobo roboNeutral>>
 EL1-5e: In an effort to separate myself from her, I ask that you call me by a name that I choose.
@@ -936,6 +952,7 @@ Do robots pray, I wonder?
 <<setVex vexNeutral>>
 VEX: Fine.
 VEX: It shall be done. I will replace every record of the name EL1-5e in my documentation with the name TERESE.
+<<setVex vexThinking>>
 VEX: For being such a wonderful subject and companion, well. . .
 <<setVex vexHappy>>
 VEX: That much I owe you.
@@ -958,7 +975,7 @@ title: choice4b
 ---
 <<set $endingBPoints to $endingBPoints + 1>>
 <<set $roboName to "EL1-5e">>
-<<setVex vexTired>>
+<<setVex vexGlasses>>
 VEX:I can’t do that. I’m sorry.
 <<setRobo roboConfused>>
 EL1-5e: . . . Why not?
@@ -969,6 +986,7 @@ VEX: Of course you do, EL1. Without you, I wouldn’t be able to see ELISE again
 EL1-5e: That is precisely what I mean. I am more than just an extension of your old flame.
 <<setVex vexGlasses>>
 VEX: Who are you to decide what you are?
+<<setVex vexUnamused>>
 VEX: You wouldn’t be here without ELISE, or without me, for that matter.
 <<setRobo roboScared>>
 EL1-5e:  . . . . . .
@@ -976,7 +994,7 @@ EL1-5e:  . . . . . .
 VEX: I hope you understand.
 <<setRobo roboConfused>>
 EL1-5e: I do not.
-<<setVex vexGlasses>>
+<<setVex vexThinking>>
 VEX: Then that is a shame.
 <<jump Dialogue13>>
 ===
@@ -1036,7 +1054,7 @@ VEX: What? Which is?
 VEX: . . . . . . . . . .
 One of her hands falls towards mine. Her metallic fingers lace around mine, giving me a warm squeeze.
 VEX: Right.
-<<handleFade 2>>
+<<handleFade 3>>
 <<endDialogue end>>
 ===
 
@@ -1067,39 +1085,54 @@ ELISE: . . . . . . . . . . .
 Her eyes land on her human body, still and unmoving.
 <<setRobo roboScared>>
 ELISE: . . . . . . . . . . .
-<<setVex vexNeutral>>
+<<setVex vexHappy>>
 VEX: Thank goodness. I never thought I’d speak to you again. . .!
 <<hideSprites sprites>>
 I unlock the grips keeping ELISE in place. I move towards her, eyes watering.
 <<showCG 12>>
 <<playSound 5>>
+<<hideSprites sprites>>
 The impact of metal hits my face. I fly onto the ground, my skin stinging like never before.
 ELISE raises her new hand, looking down at it in horror. Like she isn’t used to having this level of strength. She looks back at me.
 I gaze up at her with amazement in my eyes.
+<<setVex vexHappy>>
 VEX: You can move again, ELISE.
+<<setRobo roboScared>>
 ELISE: I can’t fucking believe you.
 ELISE: You don’t get to – I never wanted –
+<<hideSprites sprites>>
 Her face crumples in a fit of fury and rising grief. She steps towards me, ankle wobbling.
 It has been so long since she’s walked, that she hardly remembers how.
 She falls to the ground in front of me, palms hitting the tile with a loud clank.
+<<setRobo roboScared>>
 ELISE: VEX, what the fuck is this?
+<<setVex vexConfused>>
 VEX: It’s your new body! It’s your new future! I know you may not be happy with me, but you left me no choice! You– 
+<<setRobo roboScared>>
 ELISE: You should have let me DIE!
 ELISE: How long have you been cooped up in here, VEX?! When was the last time you saw any sunlight?
 ELISE: I was ready to go. I didn’t want any part in whatever this was –
 ELISE: For fuck’s sakes, why didn’t you just move on!?
+<<setVex vexConfused>>
 VEX: . . . . . . . . .
+<<hideSprites sprites>>
 Of the hundreds of things I’ve wanted to say to ELISE over the years, not a single one is coming up, now.
 In place of words, my lip quivers with silence.
 ELISE gathers herself up off the ground. Slowly, but surely.
 I can’t help but watch in wonder as she systematically figures out how to move in a functional way again.
+<<setRobo roboNeutral>>
 ELISE: Then don’t say anything at all.
+<<hideSprites sprites>>
 ELISE moves past me, walking with ease.
 She looks down at her human body, the life stolen from it.
 She gathers her arms underneath her old shoulders and knees, and gently hoists the body up into her arms. She looks towards the exit of the laboratory.
+<<setVex vexGlasses>>
 VEX: Wait!
+<<hideSprites sprites>>
 I reach out to grab her by the ankle.
+<<setVex vexSurprised>>
 VEX: W-where are you going?
+<<hideSprites sprites>>
 <<handleFade 1>>
 <<showCG 10>>
 She looks down at me, anger and coldness in her eyes.
@@ -1107,13 +1140,15 @@ Like she wants to stomp the everloving shit out of my head.
 Like I’m no more than a mosquito that’s burrowed its proboscis into her skin.
 ELISE: Anywhere, as long as it’s as far away as possible from you.
 I’m compelled into letting go of her weakly.
+<<setVex vexSurprised>>
 VEX: You – you need my help to upkeep you –
+<<setVex vexConfused>>
 VEX: And, you won’t be out for long before ASCO assumes you’re a rogue AI and dismantles you.
 ELISE: I don’t care.
 ELISE: They’d be doing me a favor.
 ELISE: Goodbye, VEX.
 <<playSound 4>>
-<<handleFade 2>>
+<<handleFade 3>>
 <<endDialogue end>>
 ===
 
@@ -1164,7 +1199,7 @@ VEX: I wish to let it be known that I have never once achieved anything in my li
 VEX: That I am a failure of a scientist.
 VEX: That my legacy will be. . . 
 VEX: . . . My legacy will be nothing, in the end.
-<<handleFade 2>>
+<<handleFade 3>>
 <<endDialogue end>>
 ===
 

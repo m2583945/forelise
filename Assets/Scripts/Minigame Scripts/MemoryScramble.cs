@@ -138,10 +138,21 @@ public class MemoryScramble : MonoBehaviour
         if(pairs == cardImages.Length)
         {
             //continueButton.gameObject.SetActive(true);
-            mh.nextGame();
+            StartCoroutine("winGame");
+            //mh.nextGame();
         }
 
         //Image current = card.gameObject.GetComponent<Image>();        
+    }
+
+    IEnumerator winGame()
+    {
+        yield return new WaitForSeconds(0.5f);
+        se.playVoice("pleasure3");
+        yield return new WaitForSeconds(se.voiceover.clip.length + 0.2f);
+        //print("not a match");
+        mh.nextGame();
+
     }
 
     IEnumerator ResetCards()

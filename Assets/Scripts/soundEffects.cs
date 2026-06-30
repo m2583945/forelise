@@ -10,6 +10,11 @@ public class soundEffects : MonoBehaviour
     public AudioClip[] sounds;
     public DialogueRunner dr;
     public AudioClip[] voiceovers;
+
+
+    public AudioClip[] painSounds;
+    public AudioClip[] pleasureSounds;
+    public AudioSource gameVoice;
     void Start()
     {
         dr.AddCommandHandler<string>("playVoice", playVoice);
@@ -37,6 +42,7 @@ public class soundEffects : MonoBehaviour
      * 11 - click
      * 12 - ow!
      * 13 - ouch!
+     * 14 - tightenscrew
      */
     public void switchSound(int num)
     {
@@ -86,7 +92,45 @@ public class soundEffects : MonoBehaviour
         {
             voiceover.clip = voiceovers[14];
         }
+        if(sound == "pleasure3")
+        {
+            voiceover.clip = voiceovers[15];
+        }
+        if(sound == "ifeelweird")
+        {
+            voiceover.clip = voiceovers[16];
+        }
         voiceover.Play();
+    }
+
+    public void randomPainSound()
+    {
+        int rand1 = Random.Range(0, 4);
+        if(rand1 == 1)
+        {
+            int rand2 = Random.Range(0, painSounds.Length);
+            gameVoice.clip = painSounds[rand2];
+            gameVoice.Play();
+        }
+
+    }
+
+    public void randomPleasureSound()
+    {
+        int rand1 = Random.Range(0, 4);
+        if (rand1 == 1)
+        {
+            int rand2 = Random.Range(0, pleasureSounds.Length);
+            gameVoice.clip = pleasureSounds[rand2];
+            gameVoice.Play();
+        }
+
+    }
+
+    public void painSound()
+    {
+        gameVoice.clip = painSounds[0];
+        gameVoice.Play();
     }
 
     public IEnumerator roboWelcome()

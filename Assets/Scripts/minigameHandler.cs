@@ -54,6 +54,7 @@ public class minigameHandler : MonoBehaviour
         if (day == 2)
         {
             print("day 2 start");
+            currentGame = 3;
             minigames[3].gameObject.SetActive(true);
             return;
         }
