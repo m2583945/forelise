@@ -1,9 +1,9 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "EmotionSlide", menuName = "Scriptable Objects/EmotionSlide")]
-public class EmotionSlide : ScriptableObject
+[CreateAssetMenu(fileName = "EmotionSlides", menuName = "Scriptable Objects/EmotionSlides")]
+public class EmotionSlides : ScriptableObject
 {
-    public Sprite image;
+    public Sprite[] images;
     public enum EmotionType {HAPPY, SAD, ANGRY, SCARED}
 
     public EmotionType emotion;

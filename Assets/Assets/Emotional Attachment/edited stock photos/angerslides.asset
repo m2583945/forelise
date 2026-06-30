@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7fa47a2fc3b6994cb9455a20002243d, type: 3}
+  m_Name: angerslides
+  m_EditorClassIdentifier: Assembly-CSharp::EmotionSlides
+  images:
+  - {fileID: 1354184294978915881, guid: 0902f6f78695abd46a2632b12b398832, type: 3}
+  - {fileID: 8587959331004447028, guid: 9f9b860aa4b50d64da55242ef13478a3, type: 3}
+  - {fileID: -6433779553883747190, guid: 1fcc6aa4133c3e9499710e1ce82f6b5b, type: 3}
+  - {fileID: 8091465014792532461, guid: 92c6e146a37873a4e8b85ec33681f8e2, type: 3}
+  - {fileID: 6907997021520477824, guid: 41c83b1e299ac5d4e9a754fa97120928, type: 3}
+  - {fileID: 6760687742872732815, guid: bd660d7f5f23751468d1ca9110b442ee, type: 3}
+  - {fileID: 8875265453209929952, guid: f4ba7a1a29c1c604eb4e35a976f1972c, type: 3}
+  - {fileID: -6422643721764932164, guid: 859854e2a327c4341844d1e6022e1032, type: 3}
+  - {fileID: 8739035406735488914, guid: 1f17b5dcc22952a4585bfff250ee553e, type: 3}
+  - {fileID: 4808269552691355387, guid: 5e882bf53c6f826479a6eade5540e352, type: 3}
+  - {fileID: 1745766294639374043, guid: a024da3ba1321424f9bcf9c1259e3d31, type: 3}
+  emotion: 2

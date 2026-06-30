@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CalibrationPoint : MonoBehaviour
 {
-    private float syncTime = 2f;
+    private float syncTime = 2;
     private float syncPercentage;
     private bool calibrating;
     private bool syncComplete;
@@ -28,7 +28,7 @@ public class CalibrationPoint : MonoBehaviour
             if (calibrating)
             {
                 syncPercentage += Time.deltaTime;
-                if (syncPercentage > syncTime)
+                if (progressDot.localScale == new Vector3(1,1,1))
                 {
                     syncComplete = true;
                 }
@@ -39,7 +39,8 @@ public class CalibrationPoint : MonoBehaviour
                     syncPercentage -= Time.deltaTime;
             }
             
-            _spriteRenderer.color = Color.Lerp(Color.red, Color.green, syncPercentage);
+            //_spriteRenderer.color = Color.Lerp(Color.red, Color.green, syncPercentage);
+            progressDot.localScale = Vector3.Lerp(new Vector3(0,0,1),new Vector3(1,1,1), syncPercentage);
         }
         
     }

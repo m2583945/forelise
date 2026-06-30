@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7fa47a2fc3b6994cb9455a20002243d, type: 3}
+  m_Name: sadslides
+  m_EditorClassIdentifier: Assembly-CSharp::EmotionSlides
+  images:
+  - {fileID: 2284551741781607414, guid: 40698175e9a259a4b9f493f9c609d787, type: 3}
+  - {fileID: -4002649818422816864, guid: 59f6ffd15f2b6fd448296accf3083bec, type: 3}
+  - {fileID: -1761569538730570061, guid: a0c242e7300106146bcadffefe89752c, type: 3}
+  - {fileID: 8167318075638710099, guid: 069408d0b40fed14bbb180dc30c3d30c, type: 3}
+  - {fileID: -1579458871016282042, guid: e1d7ff9a331a4c046a68546ded072efd, type: 3}
+  - {fileID: -3902555929998825701, guid: 65c7d96fecae42344b1d38b8e235fe1c, type: 3}
+  - {fileID: 5785215843147182258, guid: a1f9ae1f40a3f2b4f9faa3662e4854ca, type: 3}
+  - {fileID: -4718835970479366065, guid: bb22949d1c1ee7c44b8c1ed3fc5e2ae6, type: 3}
+  - {fileID: -1662535563671623693, guid: 7f58a1baa542d20478e612ba933357fc, type: 3}
+  - {fileID: 1035433666857450884, guid: 0b62c3984d4997c43b4786704ebf3cb6, type: 3}
+  emotion: 1

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7fa47a2fc3b6994cb9455a20002243d, type: 3}
+  m_Name: fearslides
+  m_EditorClassIdentifier: Assembly-CSharp::EmotionSlides
+  images:
+  - {fileID: -8004960366531667241, guid: f881144d129b22147a78482fca56895d, type: 3}
+  - {fileID: 5456180461008770562, guid: 72f23d802aeca9d4fb6704c3fff4578b, type: 3}
+  - {fileID: -4931698806858744939, guid: 7e29b78c625c4c04283b9f8f94b1b2c7, type: 3}
+  - {fileID: 3389726777910830373, guid: 5de060dc09550f243ad575e184cb33cc, type: 3}
+  - {fileID: 7323379168123312040, guid: 547a0e2933952244f8a1123897d1f774, type: 3}
+  - {fileID: -8729932143381252523, guid: 567c78800d0e903488b6dbb871557493, type: 3}
+  - {fileID: -5309314615439488729, guid: f7624754f259a3c4fa7b8d4341f23aff, type: 3}
+  - {fileID: 7898079134601026703, guid: c06337b89dfff2341a65897e80427125, type: 3}
+  - {fileID: -7965147204125403827, guid: 5314e8c8032830647942fb0700c1f3be, type: 3}
+  - {fileID: -63932940391684962, guid: 8c81214f606746743aae510966ec174c, type: 3}
+  - {fileID: 2275208218596574040, guid: 5fd1c2c42eb1db541a80756b8f5a9eaa, type: 3}
+  emotion: 3

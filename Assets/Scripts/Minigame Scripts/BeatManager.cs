@@ -20,7 +20,7 @@ public class BeatManager : MonoBehaviour
     public GameObject beep;
     public GameObject beepPrefab;
 
-    public AudioClip teeBallSound;
+    //public AudioClip teeBallSound;
 
     private bool ballTeed;
 
@@ -73,7 +73,7 @@ public class BeatManager : MonoBehaviour
             beep = Instantiate(beepPrefab);
             //GetComponent<TapSyncController>().SetNext(ball);
             lastBeatNumber = songPosInBeats;
-            GetComponent<AudioSource>().PlayOneShot(teeBallSound, .25f);
+           // GetComponent<AudioSource>().PlayOneShot(teeBallSound, .25f);
             
             print("spawn");
             return true;
