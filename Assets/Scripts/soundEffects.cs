@@ -43,6 +43,7 @@ public class soundEffects : MonoBehaviour
      * 12 - ow!
      * 13 - ouch!
      * 14 - tightenscrew
+     * 15 - startup sound
      */
     public void switchSound(int num)
     {

@@ -62,6 +62,7 @@ title:Dialogue2
 <<setVex vexConfused>>
 VEX: Okay. It’s a long shot, but–
 <<setVex vexSurprised>>
+<<playSound 15>>
 VEX: . . . !
 <<setRobo roboWhiteEyes>>
 <<jump VO1>>
