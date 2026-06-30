@@ -9,9 +9,9 @@ using UnityEngine.UI;
 public class dressCode : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public Sprite[] hairArray;
-    public Sprite[] dressArray;
-    public Sprite[] propArray;
+    public GameObject[] hairArray;
+    public GameObject[] dressArray;
+    public GameObject[] propArray;
 
     public Image hair;
     public Image dress;
@@ -106,20 +106,22 @@ public class dressCode : MonoBehaviour
     {
         se.switchSound(11);
         print("current hair num is " + currentHairNum);
-        hair.gameObject.GetComponent<Image>().sprite = hairArray[currentHairNum];
-        hair.gameObject.GetComponent<Image>().SetNativeSize();
+        deactivate("hair");
+        hairArray[currentHairNum].gameObject.SetActive(true);
+        //hair.gameObject.GetComponent<Image>().sprite = hairArray[currentHairNum];
+        //hair.gameObject.GetComponent<Image>().SetNativeSize();
     }
     public void changeDress()
     {
         se.switchSound(11);
-        dress.gameObject.GetComponent<Image>().sprite = dressArray[currentDressNum];
-        dress.gameObject.GetComponent<Image>().SetNativeSize();
+        deactivate("dress");
+        dressArray[currentDressNum].gameObject.SetActive(true);
     }
     public void changeProp()
     {
         se.switchSound(11);
-        prop.gameObject.GetComponent<Image>().sprite = propArray[currentPropNum];
-        prop.gameObject.GetComponent<Image>().SetNativeSize();
+        deactivate("prop");
+        propArray[currentPropNum].gameObject.SetActive(true);
     }
 
     public void submit()
@@ -131,6 +133,30 @@ public class dressCode : MonoBehaviour
         
     }
 
+    public void deactivate(string item)
+    {
+        if(item == "prop")
+        {
+            for(int i = 0; i < propArray.Length; i++)
+            {
+                propArray[i].SetActive(false);  
+            }
+        }
+        if (item == "dress")
+        {
+            for (int i = 0; i < dressArray.Length; i++)
+            {
+                dressArray[i].SetActive(false);
+            }
+        }
+        if (item == "hair")
+        {
+            for (int i = 0; i < hairArray.Length; i++)
+            {
+                hairArray[i].SetActive(false);
+            }
+        }
+    }
     IEnumerator wait1sec()
     {
         yield return new WaitForSeconds(1.5f);
