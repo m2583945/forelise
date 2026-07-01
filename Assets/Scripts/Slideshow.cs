@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Slideshow : MonoBehaviour
 {
@@ -6,14 +7,18 @@ public class Slideshow : MonoBehaviour
     public EmotionSlides angerSlides;
     public EmotionSlides happySlides;
     public EmotionSlides sadSlides;
+    private EmotionSlides[] slides;
     private int slideIndex;
-    private EmotionSlides currentSlide;
-    private SpriteRenderer display;
+    private EmotionSlides currentSlideArray;
+    private Image display;
     private Sprite image;
+
+    public ProgressBar gameProgress;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        display = GetComponent<SpriteRenderer>();
+        display = GetComponent<Image>();
+        slides = new EmotionSlides[] { fearSlides, angerSlides, happySlides, sadSlides };
         ChangeSlide();
     }
 
@@ -25,41 +30,47 @@ public class Slideshow : MonoBehaviour
 
     public void SubmitAnswer(string emotionType)
     {
-        if (emotionType.Equals("happiness") & currentSlide.emotion == EmotionSlides.EmotionType.HAPPY)
+        if (emotionType.Equals("happiness") & currentSlideArray.emotion == EmotionSlides.EmotionType.HAPPY)
         {
             Debug.Log("Happy Memory");
+            gameProgress.AddPoint(1);
             ChangeSlide();
         }
-        else if(emotionType.Equals("sadness") & currentSlide.emotion == EmotionSlides.EmotionType.SAD)
+        else if(emotionType.Equals("sadness") & currentSlideArray.emotion == EmotionSlides.EmotionType.SAD)
         {
             Debug.Log("Sad Memory");
+            gameProgress.AddPoint(1);
             ChangeSlide();
         }
-        else if(emotionType.Equals("anger") & currentSlide.emotion == EmotionSlides.EmotionType.ANGRY)
+        else if(emotionType.Equals("anger") & currentSlideArray.emotion == EmotionSlides.EmotionType.ANGRY)
         {
             Debug.Log("Angry Memory");
+            gameProgress.AddPoint(1);
             ChangeSlide();
         }
-        else if(emotionType.Equals("fear") & currentSlide.emotion == EmotionSlides.EmotionType.SCARED)
+        else if(emotionType.Equals("fear") & currentSlideArray.emotion == EmotionSlides.EmotionType.SCARED)
         {
             Debug.Log("Scary Memory"); 
+            gameProgress.AddPoint(1);
             ChangeSlide();
         }
         else
         {
+            gameProgress.AddPoint(-1);
             Debug.Log("Incorrect!");
         }
     }
 
+    
     private void ChangeSlide()
     {
-        int newSlide = slideIndex;
-        while (newSlide == slideIndex)
+        int newSlideArray = slideIndex;
+        while (newSlideArray == slideIndex)
         {
-            //newSlide = Random.Range(0, slides.Length);
+            newSlideArray = Random.Range(0, slides.Length);
         }
-        //currentSlide = slides[newSlide];
-        slideIndex = newSlide;
-        //display.sprite = currentSlide.image;
+        currentSlideArray = slides[newSlideArray];
+        slideIndex = newSlideArray;
+        display.sprite = currentSlideArray.images[Random.Range(0, currentSlideArray.images.Length)];
     }
 }

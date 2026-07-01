@@ -1013,6 +1013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Yarn.Unity.DialogueHandler
   dr: {fileID: 385068476}
   dialogueSystem: {fileID: 385068475}
+  endScreen: {fileID: 0}
   disabledDuringDialogue:
   - {fileID: 65842441}
   allowClicks: 1
@@ -1215,6 +1216,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9ca8713b4c49b204b9bacf9060bf7ab3, type: 3}
   - {fileID: 8300000, guid: 0d18c7e989762d24998e3b062d8c4b01, type: 3}
   - {fileID: 8300000, guid: 65222b39a83f661478a85902d0d66dda, type: 3}
+  painSounds: []
+  pleasureSounds: []
+  gameVoice: {fileID: 0}
 --- !u!114 &540329489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4208,10 +4212,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1549032528}
     m_Modifications:
-    - target: {fileID: 921493238592887249, guid: 4ae9b8ebd27fc6446978b4ad48d8b596, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5158201166009949936, guid: 4ae9b8ebd27fc6446978b4ad48d8b596, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4292,14 +4292,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5569123233684014650, guid: 4ae9b8ebd27fc6446978b4ad48d8b596, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206246936353239898, guid: 4ae9b8ebd27fc6446978b4ad48d8b596, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 6928286920239864104, guid: 4ae9b8ebd27fc6446978b4ad48d8b596, type: 3}
+      propertyPath: MinigameHandler
+      value: 
+      objectReference: {fileID: 540329489}
     - target: {fileID: 9199086702244750335, guid: 4ae9b8ebd27fc6446978b4ad48d8b596, type: 3}
       propertyPath: m_Name
       value: Minigame Mainframe

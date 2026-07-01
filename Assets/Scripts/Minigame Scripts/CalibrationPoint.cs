@@ -7,6 +7,7 @@ public class CalibrationPoint : MonoBehaviour
     private float syncPercentage;
     private bool calibrating;
     private bool syncComplete;
+    public ProgressBar progressBar;
     private SpriteRenderer _spriteRenderer;
 
     public Transform progressDot;
@@ -30,6 +31,7 @@ public class CalibrationPoint : MonoBehaviour
                 syncPercentage += Time.deltaTime;
                 if (progressDot.localScale == new Vector3(1,1,1))
                 {
+                    progressBar.AddPoint(1);
                     syncComplete = true;
                 }
             }

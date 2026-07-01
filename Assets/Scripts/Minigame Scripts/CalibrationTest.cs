@@ -3,7 +3,6 @@ using UnityEngine;
 public class CalibrationTest : MonoBehaviour
 {
     public CalibrationPoint[] points;
-
     private bool completed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
