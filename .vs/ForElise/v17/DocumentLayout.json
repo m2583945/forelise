@@ -7,40 +7,40 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\soundeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\soundeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:1:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\dialoguehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\minigame scripts\\hackgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigame scripts\\hackgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\dialoguehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\minigamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\maintenance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\maintenance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|c:\\users\\mkach\\documents\\github\\forelise\\assets\\scripts\\minigame scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigame scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\minigame scripts\\pluggame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigame scripts\\pluggame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|c:\\users\\mkach\\documents\\github\\forelise\\assets\\scripts\\dresscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\dresscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dresscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03A3C849-79A4-22DA-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\dresscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03A3C849-79A4-22DA-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dresscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\soundeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\soundeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\minigame scripts\\hackgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigame scripts\\hackgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\maintenance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\maintenance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\minigame scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigame scripts\\memoryscramble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\assets\\scripts\\minigame scripts\\pluggame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C8A303-A479-DA22-DD21-0CB5289CF6D6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigame scripts\\pluggame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +54,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "MemoryScramble.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\Minigame Scripts\\MemoryScramble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Minigame Scripts\\MemoryScramble.cs",
@@ -62,38 +62,37 @@
               "RelativeToolTip": "Assets\\Scripts\\Minigame Scripts\\MemoryScramble.cs",
               "ViewState": "AgIAAHwAAAAAAAAAAAAAwJcAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T15:02:48.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T15:02:48.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "dressCode.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\dressCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\dressCode.cs",
               "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\dressCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\dressCode.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAcwKgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAuwLEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-30T14:01:09.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DialogueHandler.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\DialogueHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueHandler.cs",
               "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\DialogueHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\DialogueHandler.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAAANIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAAAJIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-30T05:15:55.321Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "plugGame.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\Minigame Scripts\\plugGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Minigame Scripts\\plugGame.cs",
@@ -101,12 +100,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Minigame Scripts\\plugGame.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T06:22:11.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T06:22:11.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "hackGame.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\Minigame Scripts\\hackGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Minigame Scripts\\hackGame.cs",
@@ -114,12 +112,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Minigame Scripts\\hackGame.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAAwIEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T06:14:02.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T06:14:02.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "dressCode.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\dressCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\dressCode.cs",
@@ -131,20 +128,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "minigameHandler.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\minigameHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\minigameHandler.cs",
               "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\minigameHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\minigameHandler.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAowD0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAuwFYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-14T21:27:05.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "maintenance.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\maintenance.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\maintenance.cs",
@@ -152,12 +149,11 @@
               "RelativeToolTip": "Assets\\Scripts\\maintenance.cs",
               "ViewState": "AgIAAJEAAAAAAAAAAAAAAJ0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-14T17:27:34.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-14T17:27:34.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "soundEffects.cs",
               "DocumentMoniker": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\soundEffects.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\soundEffects.cs",
@@ -165,8 +161,7 @@
               "RelativeToolTip": "Assets\\Scripts\\soundEffects.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T01:44:22.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-05T01:44:22.358Z"
             },
             {
               "$type": "Document",
@@ -176,7 +171,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn",
               "ToolTip": "C:\\Users\\mkach\\Documents\\GitHub\\ForElise\\Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn",
               "RelativeToolTip": "Assets\\Scripts\\yarn scripts\\CutsceneScript.yarn",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAawEAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAFcBAAAAAAAAAAAawF8BAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-06-14T22:46:37.757Z",
               "EditorCaption": ""

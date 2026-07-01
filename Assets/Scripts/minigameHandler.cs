@@ -54,14 +54,15 @@ public class minigameHandler : MonoBehaviour
         if (day == 2)
         {
             print("day 2 start");
-            currentGame = 3;
-            minigames[3].gameObject.SetActive(true);
+            currentGame = 1;
+            minigames[1].gameObject.SetActive(true);
             return;
         }
         if(day == 3)
         {
             print("day 3 start");
-            minigames[5].gameObject.SetActive(true);
+            currentGame = 3;
+            minigames[3].gameObject.SetActive(true);
             return;
 
         }
@@ -79,37 +80,42 @@ public class minigameHandler : MonoBehaviour
         }
         if(dayValue == 2)
         {
+            currentGame = 2;
             print("end the second day");
             dh.runMaintenance(4);
         }
         if (dayValue == 3)
         {
+            //print("day value is 3!!");
             dh.runMaintenance(6);
         }
     }
     public void nextGame()
     {
-        print("starting next day");
-        if(currentGame == 0)//needs to be 1 or 2 in final
+        //print("starting next day");
+        //print("turn off" + currentGame.ToString());
+        if (currentGame == 0)
         {
             print("ending the day");
             currentGame++;
             endDay(1);
             return;
         }
-        if(currentGame == 3)//needs to be 4 in final
+        if(currentGame == 2)
         {
             currentGame++;
             endDay(2);
             return;
         }
-        if(currentGame == 5)//needs to be 6? in final
+        if(currentGame == 4)
         {
+            currentGame++;
             endDay(3);
             return;
         }
         else
         {
+            //print("end of day current game is " + currentGame.ToString());
             minigames[currentGame].gameObject.SetActive(false);
             currentGame++;
             //play screen transition

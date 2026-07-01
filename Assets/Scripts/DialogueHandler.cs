@@ -36,6 +36,8 @@ namespace Yarn.Unity
         int tereseEnding = 0;
         int eliseEnding = 0;
 
+        public AudioSource endingMusic;
+
 
         // Start is called before the first frame update
         void Start()
@@ -51,6 +53,7 @@ namespace Yarn.Unity
             dr.AddCommandHandler<string>("noName", noName);
             dr.AddCommandHandler<string>("hideSprites", hideSprites);
             dr.AddCommandHandler<string>("endDialogue", EndDialogue);
+            dr.AddCommandHandler<string>("playEndingMusic", playEndingMusic);
             dr.AddCommandHandler<int>("runMaintenance", runMaintenance);
             dr.AddCommandHandler<int>("playSound", playSound);
             dr.AddCommandHandler<int>("showCG", showCG);
@@ -68,6 +71,19 @@ namespace Yarn.Unity
             dr.AddCommandHandler<string>("setRobo", setRobo);
             dr.AddCommandHandler<string>("noName", noName);
         }
+
+        public void playEndingMusic(string mode)
+        {
+            if(mode == "play")
+            {
+                endingMusic.Play();
+            }
+            else
+            {
+                endingMusic.Stop();
+            }
+        }
+
 
         // Update is called once per frame
         void Update()
@@ -130,7 +146,7 @@ namespace Yarn.Unity
             }
             if (spriteName == "roboWhiteEyes")
             {
-                print("white eyes");
+                //print("white eyes");
                 portrait2.gameObject.GetComponent<Image>().sprite = robogirl[2];
             }
             if (spriteName == "roboBlackEyes")
@@ -156,6 +172,10 @@ namespace Yarn.Unity
             if (spriteName == "roboHappy")
             {
                 portrait2.gameObject.GetComponent<Image>().sprite = robogirl[8];
+            }
+            if (spriteName == "roboScaredEyesClosed")
+            {
+                portrait2.gameObject.GetComponent<Image>().sprite = robogirl[9];
             }
 
             //portrait2.gameObject.GetComponent<Image>().SetNativeSize();

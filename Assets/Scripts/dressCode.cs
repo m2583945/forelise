@@ -128,9 +128,7 @@ public class dressCode : MonoBehaviour
     {
 
         se.switchSound(7);
-        StartCoroutine("wait1sec");
-
-        
+        StartCoroutine("wait1sec");   
     }
 
     public void deactivate(string item)
@@ -176,6 +174,7 @@ public class dressCode : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(se.voiceover.clip.length);
-        mh.nextGame();
+        //mh.nextGame();
+        mh.endDay(3);
     }
 }
