@@ -27,11 +27,16 @@ public class ProgressBar : MonoBehaviour
     public void AddPoint(int ptVal)
     {
         currentVal += ptVal;
+        if(currentVal < 0)
+        {
+            currentVal = 0;
+        }
         slider.value = currentVal;
         if (currentVal == maxValue)
         {
             MinigameHandler.nextGame();
         }
+        
     }
     
     
